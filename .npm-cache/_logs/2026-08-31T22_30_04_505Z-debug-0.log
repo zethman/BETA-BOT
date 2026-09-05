@@ -1,0 +1,870 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.2.4
+2 info using node@v20.11.1
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 12ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\HP\Desktop\MY BOT\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:C:\Users\HP\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\HP\AppData\Roaming\npm\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 26ms
+17 timing npm:load:configload Completed in 27ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm ci
+22 verbose argv "ci" "--cache" ".npm-cache"
+23 timing npm:load:setTitle Completed in 2ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:C:\Users\HP\Desktop\MY BOT\.npm-cache\_logs\2026-08-31T22_30_04_505Z-
+26 verbose logfile C:\Users\HP\Desktop\MY BOT\.npm-cache\_logs\2026-08-31T22_30_04_505Z-debug-0.log
+27 timing npm:load:logFile Completed in 21ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 115ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 52ms
+34 timing idealTree:userRequests Completed in 0ms
+35 silly idealTree buildDeps
+36 timing idealTree:#root Completed in 1ms
+37 timing idealTree:buildDeps Completed in 2ms
+38 timing idealTree:fixDepFlags Completed in 0ms
+39 warn EBADENGINE Unsupported engine {
+39 warn EBADENGINE   package: '@solana/codecs-core@2.3.0',
+39 warn EBADENGINE   required: { node: '>=20.18.0' },
+39 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+39 warn EBADENGINE }
+40 warn EBADENGINE Unsupported engine {
+40 warn EBADENGINE   package: '@solana/codecs-numbers@2.3.0',
+40 warn EBADENGINE   required: { node: '>=20.18.0' },
+40 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+40 warn EBADENGINE }
+41 warn EBADENGINE Unsupported engine {
+41 warn EBADENGINE   package: '@solana/errors@2.3.0',
+41 warn EBADENGINE   required: { node: '>=20.18.0' },
+41 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+41 warn EBADENGINE }
+42 timing idealTree Completed in 73ms
+43 timing npm-ci:rm Completed in 35ms
+44 timing reify:loadTrees Completed in 7ms
+45 timing reify:diffTrees Completed in 3ms
+46 silly reify moves {}
+47 timing reify:retireShallow Completed in 0ms
+48 timing reify:createSparse Completed in 107ms
+49 timing reify:loadBundles Completed in 0ms
+50 silly audit bulk request {
+50 silly audit   '@babel/runtime': [ '7.29.7' ],
+50 silly audit   '@coral-xyz/anchor': [ '0.31.1' ],
+50 silly audit   '@coral-xyz/anchor-errors': [ '0.31.1' ],
+50 silly audit   'base-x': [ '3.0.11', '5.0.1' ],
+50 silly audit   bs58: [ '4.0.1', '6.0.0' ],
+50 silly audit   '@coral-xyz/borsh': [ '0.31.1' ],
+50 silly audit   '@esbuild/aix-ppc64': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-arm': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/darwin-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/darwin-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/freebsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/freebsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-arm': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-ia32': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-loong64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-mips64el': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-ppc64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-riscv64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-s390x': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/netbsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/netbsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openbsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openbsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openharmony-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/sunos-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-ia32': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-x64': [ '0.28.1' ],
+50 silly audit   '@noble/curves': [ '1.9.7' ],
+50 silly audit   '@noble/hashes': [ '1.8.0' ],
+50 silly audit   '@pump-fun/agent-payments-sdk': [ '1.0.7' ],
+50 silly audit   '@pump-fun/pump-sdk': [ '1.36.0' ],
+50 silly audit   '@pump-fun/pump-swap-sdk': [ '1.19.0' ],
+50 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.62.4' ],
+50 silly audit   '@solana/buffer-layout': [ '4.0.1' ],
+50 silly audit   '@solana/buffer-layout-utils': [ '0.3.0' ],
+50 silly audit   '@solana/codecs': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/codecs-core': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/codecs-data-structures': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/codecs-numbers': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/codecs-strings': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/errors': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/options': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/spl-token': [ '0.4.15' ],
+50 silly audit   '@solana/spl-token-group': [ '0.0.7' ],
+50 silly audit   '@solana/spl-token-metadata': [ '0.1.6' ],
+50 silly audit   '@solana/web3.js': [ '1.98.4' ],
+50 silly audit   commander: [ '14.0.3', '12.1.0', '2.20.3' ],
+50 silly audit   'node-fetch': [ '2.7.0', '3.3.2' ],
+50 silly audit   superstruct: [ '2.0.2', '0.15.5' ],
+50 silly audit   '@swc/helpers': [ '0.5.23' ],
+50 silly audit   '@types/bn.js': [ '5.2.0' ],
+50 silly audit   '@types/connect': [ '3.4.38' ],
+50 silly audit   '@types/node': [ '20.19.43', '12.20.55' ],
+50 silly audit   'undici-types': [ '6.21.0', '6.28.0' ],
+50 silly audit   '@types/uuid': [ '10.0.0' ],
+50 silly audit   '@types/ws': [ '8.18.1', '7.4.7' ],
+50 silly audit   agentkeepalive: [ '4.6.0' ],
+50 silly audit   'base64-js': [ '1.5.1' ],
+50 silly audit   'bigint-buffer': [ '1.1.5' ],
+50 silly audit   'bignumber.js': [ '9.3.1' ],
+50 silly audit   bindings: [ '1.5.0' ],
+50 silly audit   'bn.js': [ '5.2.5' ],
+50 silly audit   borsh: [ '0.7.0' ],
+50 silly audit   buffer: [ '6.0.3' ],
+50 silly audit   'buffer-layout': [ '1.2.2' ],
+50 silly audit   bufferutil: [ '4.1.0' ],
+50 silly audit   camelcase: [ '6.3.0' ],
+50 silly audit   chalk: [ '5.6.2' ],
+50 silly audit   'cross-fetch': [ '3.2.0' ],
+50 silly audit   'data-uri-to-buffer': [ '4.0.1' ],
+50 silly audit   delay: [ '5.0.0' ],
+50 silly audit   dotenv: [ '16.6.1' ],
+50 silly audit   'es6-promise': [ '4.2.8' ],
+50 silly audit   'es6-promisify': [ '5.0.0' ],
+50 silly audit   esbuild: [ '0.28.1' ],
+50 silly audit   eventemitter3: [ '4.0.7', '5.0.4' ],
+50 silly audit   eyes: [ '0.1.8' ],
+50 silly audit   'fast-stable-stringify': [ '1.0.0' ],
+50 silly audit   fastestsmallesttextencoderdecoder: [ '1.0.22' ],
+50 silly audit   'fetch-blob': [ '3.2.0' ],
+50 silly audit   'file-uri-to-path': [ '1.0.0' ],
+50 silly audit   'formdata-polyfill': [ '4.0.10' ],
+50 silly audit   fsevents: [ '2.3.3' ],
+50 silly audit   'humanize-ms': [ '1.2.1' ],
+50 silly audit   ieee754: [ '1.2.1' ],
+50 silly audit   'isomorphic-ws': [ '4.0.1' ],
+50 silly audit   jayson: [ '4.3.0' ],
+50 silly audit   'utf-8-validate': [ '5.0.10', '6.0.6' ],
+50 silly audit   ws: [ '7.5.13', '8.21.3' ],
+50 silly audit   'json-stringify-safe': [ '5.0.1' ],
+50 silly audit   ms: [ '2.1.3' ],
+50 silly audit   'node-domexception': [ '1.0.0' ],
+50 silly audit   'node-gyp-build': [ '4.8.4' ],
+50 silly audit   pako: [ '2.2.0' ],
+50 silly audit   'rpc-websockets': [ '9.3.9' ],
+50 silly audit   uuid: [ '14.0.1', '8.3.2' ],
+50 silly audit   'safe-buffer': [ '5.2.1' ],
+50 silly audit   'stream-chain': [ '2.2.5' ],
+50 silly audit   'stream-json': [ '1.9.1' ],
+50 silly audit   'text-encoding-utf-8': [ '1.0.2' ],
+50 silly audit   toml: [ '3.0.0' ],
+50 silly audit   tr46: [ '0.0.3' ],
+50 silly audit   tslib: [ '2.8.1' ],
+50 silly audit   tsx: [ '4.23.5' ],
+50 silly audit   typescript: [ '5.9.3' ],
+50 silly audit   'web-streams-polyfill': [ '3.3.3' ],
+50 silly audit   'webidl-conversions': [ '3.0.1' ],
+50 silly audit   'whatwg-url': [ '5.0.0' ]
+50 silly audit }
+51 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\fsevents
+52 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\fsevents' ]
+53 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@rollup\rollup-linux-x64-gnu
+54 silly reify mark deleted [
+54 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+54 silly reify ]
+55 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\win32-ia32
+56 silly reify mark deleted [
+56 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\win32-ia32'
+56 silly reify ]
+57 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\win32-arm64
+58 silly reify mark deleted [
+58 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\win32-arm64'
+58 silly reify ]
+59 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\sunos-x64
+60 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\sunos-x64' ]
+61 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openharmony-arm64
+62 silly reify mark deleted [
+62 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openharmony-arm64'
+62 silly reify ]
+63 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openbsd-x64
+64 silly reify mark deleted [
+64 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openbsd-x64'
+64 silly reify ]
+65 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openbsd-arm64
+66 silly reify mark deleted [
+66 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openbsd-arm64'
+66 silly reify ]
+67 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\netbsd-x64
+68 silly reify mark deleted [
+68 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\netbsd-x64'
+68 silly reify ]
+69 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\netbsd-arm64
+70 silly reify mark deleted [
+70 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\netbsd-arm64'
+70 silly reify ]
+71 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-x64
+72 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-x64' ]
+73 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-s390x
+74 silly reify mark deleted [
+74 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-s390x'
+74 silly reify ]
+75 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-riscv64
+76 silly reify mark deleted [
+76 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-riscv64'
+76 silly reify ]
+77 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-ppc64
+78 silly reify mark deleted [
+78 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-ppc64'
+78 silly reify ]
+79 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-mips64el
+80 silly reify mark deleted [
+80 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-mips64el'
+80 silly reify ]
+81 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-loong64
+82 silly reify mark deleted [
+82 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-loong64'
+82 silly reify ]
+83 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-ia32
+84 silly reify mark deleted [
+84 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-ia32'
+84 silly reify ]
+85 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-arm64
+86 silly reify mark deleted [
+86 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-arm64'
+86 silly reify ]
+87 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-arm
+88 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-arm' ]
+89 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\freebsd-x64
+90 silly reify mark deleted [
+90 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\freebsd-x64'
+90 silly reify ]
+91 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\freebsd-arm64
+92 silly reify mark deleted [
+92 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\freebsd-arm64'
+92 silly reify ]
+93 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\darwin-x64
+94 silly reify mark deleted [
+94 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\darwin-x64'
+94 silly reify ]
+95 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\darwin-arm64
+96 silly reify mark deleted [
+96 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\darwin-arm64'
+96 silly reify ]
+97 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-x64
+98 silly reify mark deleted [
+98 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-x64'
+98 silly reify ]
+99 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-arm64
+100 silly reify mark deleted [
+100 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-arm64'
+100 silly reify ]
+101 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-arm
+102 silly reify mark deleted [
+102 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-arm'
+102 silly reify ]
+103 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\aix-ppc64
+104 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\aix-ppc64' ]
+105 timing reifyNode:node_modules/fsevents Completed in 86ms
+106 timing reifyNode:node_modules/@rollup/rollup-linux-x64-gnu Completed in 82ms
+107 timing reifyNode:node_modules/@esbuild/win32-ia32 Completed in 81ms
+108 timing reifyNode:node_modules/@esbuild/win32-arm64 Completed in 81ms
+109 timing reifyNode:node_modules/@esbuild/sunos-x64 Completed in 81ms
+110 timing reifyNode:node_modules/@esbuild/openharmony-arm64 Completed in 81ms
+111 timing reifyNode:node_modules/@esbuild/openbsd-x64 Completed in 81ms
+112 timing reifyNode:node_modules/@esbuild/openbsd-arm64 Completed in 81ms
+113 timing reifyNode:node_modules/@esbuild/netbsd-x64 Completed in 81ms
+114 timing reifyNode:node_modules/@esbuild/netbsd-arm64 Completed in 82ms
+115 timing reifyNode:node_modules/@esbuild/linux-x64 Completed in 82ms
+116 timing reifyNode:node_modules/@esbuild/linux-s390x Completed in 82ms
+117 timing reifyNode:node_modules/@esbuild/linux-riscv64 Completed in 82ms
+118 timing reifyNode:node_modules/@esbuild/linux-ppc64 Completed in 82ms
+119 timing reifyNode:node_modules/@esbuild/linux-mips64el Completed in 81ms
+120 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 82ms
+121 timing reifyNode:node_modules/@esbuild/linux-ia32 Completed in 82ms
+122 timing reifyNode:node_modules/@esbuild/linux-arm64 Completed in 82ms
+123 timing reifyNode:node_modules/@esbuild/linux-arm Completed in 82ms
+124 timing reifyNode:node_modules/@esbuild/freebsd-x64 Completed in 82ms
+125 timing reifyNode:node_modules/@esbuild/freebsd-arm64 Completed in 83ms
+126 timing reifyNode:node_modules/@esbuild/darwin-x64 Completed in 83ms
+127 timing reifyNode:node_modules/@esbuild/darwin-arm64 Completed in 82ms
+128 timing reifyNode:node_modules/@esbuild/android-x64 Completed in 82ms
+129 timing reifyNode:node_modules/@esbuild/android-arm64 Completed in 82ms
+130 timing reifyNode:node_modules/@esbuild/android-arm Completed in 82ms
+131 timing reifyNode:node_modules/@esbuild/aix-ppc64 Completed in 83ms
+132 silly tarball no local data for ws@https://registry.npmjs.org/ws/-/ws-8.21.3.tgz. Extracting by manifest.
+133 silly tarball no local data for whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz. Extracting by manifest.
+134 silly tarball no local data for webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz. Extracting by manifest.
+135 silly tarball no local data for web-streams-polyfill@https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz. Extracting by manifest.
+136 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+137 silly tarball no local data for utf-8-validate@https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-6.0.6.tgz. Extracting by manifest.
+138 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.28.0.tgz. Extracting by manifest.
+139 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz. Extracting by manifest.
+140 silly tarball no local data for tsx@https://registry.npmjs.org/tsx/-/tsx-4.23.5.tgz. Extracting by manifest.
+141 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+142 silly tarball no local data for tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz. Extracting by manifest.
+143 silly tarball no local data for toml@https://registry.npmjs.org/toml/-/toml-3.0.0.tgz. Extracting by manifest.
+144 silly tarball no local data for text-encoding-utf-8@https://registry.npmjs.org/text-encoding-utf-8/-/text-encoding-utf-8-1.0.2.tgz. Extracting by manifest.
+145 silly tarball no local data for superstruct@https://registry.npmjs.org/superstruct/-/superstruct-0.15.5.tgz. Extracting by manifest.
+146 silly tarball no local data for stream-json@https://registry.npmjs.org/stream-json/-/stream-json-1.9.1.tgz. Extracting by manifest.
+147 silly tarball no local data for stream-chain@https://registry.npmjs.org/stream-chain/-/stream-chain-2.2.5.tgz. Extracting by manifest.
+148 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+149 silly tarball no local data for rpc-websockets@https://registry.npmjs.org/rpc-websockets/-/rpc-websockets-9.3.9.tgz. Extracting by manifest.
+150 silly tarball no local data for pako@https://registry.npmjs.org/pako/-/pako-2.2.0.tgz. Extracting by manifest.
+151 silly tarball no local data for node-gyp-build@https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.8.4.tgz. Extracting by manifest.
+152 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-3.3.2.tgz. Extracting by manifest.
+153 silly tarball no local data for node-domexception@https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz. Extracting by manifest.
+154 silly tarball no local data for jayson@https://registry.npmjs.org/jayson/-/jayson-4.3.0.tgz. Extracting by manifest.
+155 silly tarball no local data for json-stringify-safe@https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz. Extracting by manifest.
+156 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.1.3.tgz. Extracting by manifest.
+157 silly tarball no local data for ieee754@https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz. Extracting by manifest.
+158 silly tarball no local data for isomorphic-ws@https://registry.npmjs.org/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz. Extracting by manifest.
+159 silly tarball no local data for formdata-polyfill@https://registry.npmjs.org/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz. Extracting by manifest.
+160 silly tarball no local data for file-uri-to-path@https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz. Extracting by manifest.
+161 silly tarball no local data for humanize-ms@https://registry.npmjs.org/humanize-ms/-/humanize-ms-1.2.1.tgz. Extracting by manifest.
+162 silly tarball no local data for fetch-blob@https://registry.npmjs.org/fetch-blob/-/fetch-blob-3.2.0.tgz. Extracting by manifest.
+163 silly tarball no local data for fast-stable-stringify@https://registry.npmjs.org/fast-stable-stringify/-/fast-stable-stringify-1.0.0.tgz. Extracting by manifest.
+164 silly tarball no local data for fastestsmallesttextencoderdecoder@https://registry.npmjs.org/fastestsmallesttextencoderdecoder/-/fastestsmallesttextencoderdecoder-1.0.22.tgz. Extracting by manifest.
+165 silly tarball no local data for eyes@https://registry.npmjs.org/eyes/-/eyes-0.1.8.tgz. Extracting by manifest.
+166 silly tarball no local data for eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz. Extracting by manifest.
+167 silly tarball no local data for es6-promise@https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz. Extracting by manifest.
+168 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.28.1.tgz. Extracting by manifest.
+169 silly tarball no local data for es6-promisify@https://registry.npmjs.org/es6-promisify/-/es6-promisify-5.0.0.tgz. Extracting by manifest.
+170 silly tarball no local data for dotenv@https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz. Extracting by manifest.
+171 silly tarball no local data for delay@https://registry.npmjs.org/delay/-/delay-5.0.0.tgz. Extracting by manifest.
+172 silly tarball no local data for data-uri-to-buffer@https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz. Extracting by manifest.
+173 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-12.1.0.tgz. Extracting by manifest.
+174 silly tarball no local data for cross-fetch@https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.2.0.tgz. Extracting by manifest.
+175 silly tarball no local data for camelcase@https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz. Extracting by manifest.
+176 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-5.6.2.tgz. Extracting by manifest.
+177 silly tarball no local data for bufferutil@https://registry.npmjs.org/bufferutil/-/bufferutil-4.1.0.tgz. Extracting by manifest.
+178 silly tarball no local data for buffer@https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz. Extracting by manifest.
+179 silly tarball no local data for buffer-layout@https://registry.npmjs.org/buffer-layout/-/buffer-layout-1.2.2.tgz. Extracting by manifest.
+180 silly tarball no local data for bs58@https://registry.npmjs.org/bs58/-/bs58-6.0.0.tgz. Extracting by manifest.
+181 silly tarball no local data for borsh@https://registry.npmjs.org/borsh/-/borsh-0.7.0.tgz. Extracting by manifest.
+182 silly tarball no local data for bindings@https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz. Extracting by manifest.
+183 silly tarball no local data for bn.js@https://registry.npmjs.org/bn.js/-/bn.js-5.2.5.tgz. Extracting by manifest.
+184 silly tarball no local data for bignumber.js@https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.3.1.tgz. Extracting by manifest.
+185 silly tarball no local data for bigint-buffer@https://registry.npmjs.org/bigint-buffer/-/bigint-buffer-1.1.5.tgz. Extracting by manifest.
+186 silly tarball no local data for @types/ws@https://registry.npmjs.org/@types/ws/-/ws-8.18.1.tgz. Extracting by manifest.
+187 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz. Extracting by manifest.
+188 silly tarball no local data for base-x@https://registry.npmjs.org/base-x/-/base-x-5.0.1.tgz. Extracting by manifest.
+189 silly tarball no local data for agentkeepalive@https://registry.npmjs.org/agentkeepalive/-/agentkeepalive-4.6.0.tgz. Extracting by manifest.
+190 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.23.tgz. Extracting by manifest.
+191 silly tarball no local data for @types/uuid@https://registry.npmjs.org/@types/uuid/-/uuid-10.0.0.tgz. Extracting by manifest.
+192 silly tarball no local data for @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz. Extracting by manifest.
+193 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz. Extracting by manifest.
+194 silly tarball no local data for @types/bn.js@https://registry.npmjs.org/@types/bn.js/-/bn.js-5.2.0.tgz. Extracting by manifest.
+195 silly tarball no local data for @solana/web3.js@https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.98.4.tgz. Extracting by manifest.
+196 silly tarball no local data for @solana/spl-token-group@https://registry.npmjs.org/@solana/spl-token-group/-/spl-token-group-0.0.7.tgz. Extracting by manifest.
+197 silly tarball no local data for @solana/spl-token-metadata@https://registry.npmjs.org/@solana/spl-token-metadata/-/spl-token-metadata-0.1.6.tgz. Extracting by manifest.
+198 silly tarball no local data for @solana/spl-token@https://registry.npmjs.org/@solana/spl-token/-/spl-token-0.4.15.tgz. Extracting by manifest.
+199 silly tarball no local data for @solana/options@https://registry.npmjs.org/@solana/options/-/options-2.0.0-rc.1.tgz. Extracting by manifest.
+200 silly tarball no local data for @solana/errors@https://registry.npmjs.org/@solana/errors/-/errors-2.0.0-rc.1.tgz. Extracting by manifest.
+201 silly tarball no local data for @solana/codecs-strings@https://registry.npmjs.org/@solana/codecs-strings/-/codecs-strings-2.0.0-rc.1.tgz. Extracting by manifest.
+202 silly tarball no local data for @solana/codecs-numbers@https://registry.npmjs.org/@solana/codecs-numbers/-/codecs-numbers-2.0.0-rc.1.tgz. Extracting by manifest.
+203 silly tarball no local data for @solana/codecs-data-structures@https://registry.npmjs.org/@solana/codecs-data-structures/-/codecs-data-structures-2.0.0-rc.1.tgz. Extracting by manifest.
+204 silly tarball no local data for @solana/codecs-core@https://registry.npmjs.org/@solana/codecs-core/-/codecs-core-2.0.0-rc.1.tgz. Extracting by manifest.
+205 silly tarball no local data for @solana/codecs@https://registry.npmjs.org/@solana/codecs/-/codecs-2.0.0-rc.1.tgz. Extracting by manifest.
+206 silly tarball no local data for @solana/buffer-layout-utils@https://registry.npmjs.org/@solana/buffer-layout-utils/-/buffer-layout-utils-0.3.0.tgz. Extracting by manifest.
+207 silly tarball no local data for @solana/buffer-layout@https://registry.npmjs.org/@solana/buffer-layout/-/buffer-layout-4.0.1.tgz. Extracting by manifest.
+208 silly tarball no local data for @pump-fun/pump-swap-sdk@https://registry.npmjs.org/@pump-fun/pump-swap-sdk/-/pump-swap-sdk-1.19.0.tgz. Extracting by manifest.
+209 silly tarball no local data for @pump-fun/pump-sdk@https://registry.npmjs.org/@pump-fun/pump-sdk/-/pump-sdk-1.36.0.tgz. Extracting by manifest.
+210 silly tarball no local data for @pump-fun/agent-payments-sdk@https://registry.npmjs.org/@pump-fun/agent-payments-sdk/-/agent-payments-sdk-1.0.7.tgz. Extracting by manifest.
+211 silly tarball no local data for @noble/curves@https://registry.npmjs.org/@noble/curves/-/curves-1.9.7.tgz. Extracting by manifest.
+212 silly tarball no local data for @noble/hashes@https://registry.npmjs.org/@noble/hashes/-/hashes-1.8.0.tgz. Extracting by manifest.
+213 silly tarball no local data for @esbuild/win32-x64@https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.1.tgz. Extracting by manifest.
+214 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz. Extracting by manifest.
+215 silly tarball no local data for @coral-xyz/anchor-errors@https://registry.npmjs.org/@coral-xyz/anchor-errors/-/anchor-errors-0.31.1.tgz. Extracting by manifest.
+216 silly tarball no local data for @coral-xyz/borsh@https://registry.npmjs.org/@coral-xyz/borsh/-/borsh-0.31.1.tgz. Extracting by manifest.
+217 silly tarball no local data for @coral-xyz/anchor@https://registry.npmjs.org/@coral-xyz/anchor/-/anchor-0.31.1.tgz. Extracting by manifest.
+218 silly tarball no local data for eventemitter3@https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz. Extracting by manifest.
+219 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-14.0.1.tgz. Extracting by manifest.
+220 silly tarball no local data for ws@https://registry.npmjs.org/ws/-/ws-7.5.13.tgz. Extracting by manifest.
+221 silly tarball no local data for @types/ws@https://registry.npmjs.org/@types/ws/-/ws-7.4.7.tgz. Extracting by manifest.
+222 silly tarball no local data for utf-8-validate@https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-5.0.10.tgz. Extracting by manifest.
+223 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-2.20.3.tgz. Extracting by manifest.
+224 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz. Extracting by manifest.
+225 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-12.20.55.tgz. Extracting by manifest.
+226 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz. Extracting by manifest.
+227 silly tarball no local data for base-x@https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz. Extracting by manifest.
+228 silly tarball no local data for bs58@https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz. Extracting by manifest.
+229 silly tarball no local data for superstruct@https://registry.npmjs.org/superstruct/-/superstruct-2.0.2.tgz. Extracting by manifest.
+230 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz. Extracting by manifest.
+231 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-14.0.3.tgz. Extracting by manifest.
+232 silly tarball no local data for bs58@https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz. Extracting by manifest.
+233 silly tarball no local data for base-x@https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz. Extracting by manifest.
+234 silly tarball no local data for @solana/errors@https://registry.npmjs.org/@solana/errors/-/errors-2.3.0.tgz. Extracting by manifest.
+235 silly tarball no local data for @solana/codecs-core@https://registry.npmjs.org/@solana/codecs-core/-/codecs-core-2.3.0.tgz. Extracting by manifest.
+236 silly tarball no local data for bs58@https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz. Extracting by manifest.
+237 silly tarball no local data for @solana/codecs-numbers@https://registry.npmjs.org/@solana/codecs-numbers/-/codecs-numbers-2.3.0.tgz. Extracting by manifest.
+238 silly tarball no local data for base-x@https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz. Extracting by manifest.
+239 http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 2686ms (cache miss)
+240 timing reifyNode:node_modules/webidl-conversions Completed in 2881ms
+241 http fetch GET 200 https://registry.npmjs.org/@types/uuid/-/uuid-10.0.0.tgz 2795ms (cache miss)
+242 http fetch GET 200 https://registry.npmjs.org/@types/bn.js/-/bn.js-5.2.0.tgz 2792ms (cache miss)
+243 timing reifyNode:node_modules/@types/bn.js Completed in 3062ms
+244 timing reifyNode:node_modules/@types/uuid Completed in 3063ms
+245 http fetch GET 200 https://registry.npmjs.org/base-x/-/base-x-5.0.1.tgz 2824ms (cache miss)
+246 timing reifyNode:node_modules/base-x Completed in 3083ms
+247 http fetch GET 200 https://registry.npmjs.org/@types/ws/-/ws-8.18.1.tgz 2936ms (cache miss)
+248 timing reifyNode:node_modules/@types/ws Completed in 3190ms
+249 http fetch GET 200 https://registry.npmjs.org/agentkeepalive/-/agentkeepalive-4.6.0.tgz 2938ms (cache miss)
+250 timing reifyNode:node_modules/agentkeepalive Completed in 3196ms
+251 http fetch GET 200 https://registry.npmjs.org/@solana/options/-/options-2.0.0-rc.1.tgz 2935ms (cache miss)
+252 timing reifyNode:node_modules/@solana/options Completed in 3213ms
+253 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 3748ms (cache miss)
+254 warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+255 timing reifyNode:node_modules/uuid Completed in 3944ms
+256 http fetch GET 200 https://registry.npmjs.org/@solana/buffer-layout-utils/-/buffer-layout-utils-0.3.0.tgz 4978ms (cache miss)
+257 timing reifyNode:node_modules/@solana/buffer-layout-utils Completed in 5267ms
+258 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-numbers/-/codecs-numbers-2.0.0-rc.1.tgz 4997ms (cache miss)
+259 timing reifyNode:node_modules/@solana/codecs-numbers Completed in 5278ms
+260 http fetch GET 200 https://registry.npmjs.org/ws/-/ws-8.21.3.tgz 5535ms (cache miss)
+261 timing reifyNode:node_modules/ws Completed in 5723ms
+262 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-strings/-/codecs-strings-2.0.0-rc.1.tgz 5483ms (cache miss)
+263 timing reifyNode:node_modules/@solana/codecs-strings Completed in 5764ms
+264 http fetch GET 200 https://registry.npmjs.org/bs58/-/bs58-6.0.0.tgz 5570ms (cache miss)
+265 timing reifyNode:node_modules/bs58 Completed in 5817ms
+266 http fetch GET 200 https://registry.npmjs.org/es6-promisify/-/es6-promisify-5.0.0.tgz 5773ms (cache miss)
+267 timing reifyNode:node_modules/es6-promisify Completed in 6006ms
+268 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz 5788ms (cache miss)
+269 timing reifyNode:node_modules/bindings Completed in 6038ms
+270 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.1.3.tgz 5826ms (cache miss)
+271 timing reifyNode:node_modules/ms Completed in 6044ms
+272 http fetch GET 200 https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz 5813ms (cache miss)
+273 timing reifyNode:node_modules/data-uri-to-buffer Completed in 6053ms
+274 http fetch GET 200 https://registry.npmjs.org/eventemitter3/-/eventemitter3-5.0.4.tgz 5762ms (cache miss)
+275 timing reifyNode:node_modules/rpc-websockets/node_modules/eventemitter3 Completed in 6079ms
+276 http fetch GET 200 https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz 6273ms (cache miss)
+277 timing reifyNode:node_modules/camelcase Completed in 6521ms
+278 http fetch GET 200 https://registry.npmjs.org/fetch-blob/-/fetch-blob-3.2.0.tgz 7430ms (cache miss)
+279 timing reifyNode:node_modules/fetch-blob Completed in 7652ms
+280 http fetch GET 200 https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz 7446ms (cache miss)
+281 timing reifyNode:node_modules/eventemitter3 Completed in 7672ms
+282 http fetch GET 200 https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz 7482ms (cache miss)
+283 timing reifyNode:node_modules/json-stringify-safe Completed in 7698ms
+284 http fetch GET 200 https://registry.npmjs.org/delay/-/delay-5.0.0.tgz 7717ms (cache miss)
+285 timing reifyNode:node_modules/delay Completed in 7954ms
+286 http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 7772ms (cache miss)
+287 timing reifyNode:node_modules/whatwg-url Completed in 7962ms
+288 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz 8466ms (cache miss)
+289 timing reifyNode:node_modules/dotenv Completed in 8702ms
+290 http fetch GET 200 https://registry.npmjs.org/@solana/spl-token-group/-/spl-token-group-0.0.7.tgz 8498ms (cache miss)
+291 timing reifyNode:node_modules/@solana/spl-token-group Completed in 8769ms
+292 http fetch GET 200 https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz 9005ms (cache miss)
+293 timing reifyNode:node_modules/buffer Completed in 9248ms
+294 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 9541ms
+295 timing auditReport:getReport Completed in 9545ms
+296 silly audit report {
+296 silly audit report   'bigint-buffer': [
+296 silly audit report     {
+296 silly audit report       id: 1103747,
+296 silly audit report       url: 'https://github.com/advisories/GHSA-3gc7-fjrx-p6mg',
+296 silly audit report       title: 'bigint-buffer Vulnerable to Buffer Overflow via toBigIntLE() Function',
+296 silly audit report       severity: 'high',
+296 silly audit report       vulnerable_versions: '<=1.1.5',
+296 silly audit report       cwe: [Array],
+296 silly audit report       cvss: [Object]
+296 silly audit report     }
+296 silly audit report   ],
+296 silly audit report   uuid: [
+296 silly audit report     {
+296 silly audit report       id: 1119441,
+296 silly audit report       url: 'https://github.com/advisories/GHSA-w5hq-g745-h8pq',
+296 silly audit report       title: 'uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided',
+296 silly audit report       severity: 'moderate',
+296 silly audit report       vulnerable_versions: '<11.1.1',
+296 silly audit report       cwe: [Array],
+296 silly audit report       cvss: [Object]
+296 silly audit report     }
+296 silly audit report   ]
+296 silly audit report }
+297 timing metavuln:cache:get:security-advisory:bigint-buffer:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 19ms
+298 timing metavuln:cache:get:security-advisory:uuid:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 17ms
+299 http fetch GET 200 https://registry.npmjs.org/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz 9642ms (cache miss)
+300 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 9665ms (cache miss)
+301 timing reifyNode:node_modules/safe-buffer Completed in 9872ms
+302 timing reifyNode:node_modules/formdata-polyfill Completed in 9878ms
+303 http fetch GET 200 https://registry.npmjs.org/humanize-ms/-/humanize-ms-1.2.1.tgz 9890ms (cache miss)
+304 http fetch GET 200 https://registry.npmjs.org/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz 9954ms (cache miss)
+305 timing reifyNode:node_modules/humanize-ms Completed in 10184ms
+306 timing reifyNode:node_modules/isomorphic-ws Completed in 10321ms
+307 http fetch GET 200 https://registry.npmjs.org/buffer-layout/-/buffer-layout-1.2.2.tgz 10114ms (cache miss)
+308 timing reifyNode:node_modules/buffer-layout Completed in 10359ms
+309 http fetch GET 200 https://registry.npmjs.org/eyes/-/eyes-0.1.8.tgz 10218ms (cache miss)
+310 timing reifyNode:node_modules/eyes Completed in 10444ms
+311 http fetch GET 200 https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.8.4.tgz 10322ms (cache miss)
+312 timing reifyNode:node_modules/node-gyp-build Completed in 10560ms
+313 http fetch GET 200 https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 10394ms (cache miss)
+314 timing reifyNode:node_modules/@types/connect Completed in 10662ms
+315 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-5.6.2.tgz 10525ms (cache miss)
+316 timing reifyNode:node_modules/chalk Completed in 10765ms
+317 http fetch GET 200 https://registry.npmjs.org/bigint-buffer 1240ms (cache miss)
+318 timing metavuln:packument:bigint-buffer Completed in 1241ms
+319 timing metavuln:load:security-advisory:bigint-buffer:1103747 Completed in 6ms
+320 http fetch GET 200 https://registry.npmjs.org/uuid 1284ms (cache miss)
+321 timing metavuln:packument:uuid Completed in 1287ms
+322 timing metavuln:load:security-advisory:uuid:1119441 Completed in 7ms
+323 http fetch GET 200 https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.2.0.tgz 10648ms (cache miss)
+324 timing reifyNode:node_modules/cross-fetch Completed in 10886ms
+325 http fetch GET 200 https://registry.npmjs.org/@types/ws/-/ws-7.4.7.tgz 10584ms (cache miss)
+326 timing reifyNode:node_modules/jayson/node_modules/@types/ws Completed in 10902ms
+327 http fetch GET 200 https://registry.npmjs.org/borsh/-/borsh-0.7.0.tgz 10705ms (cache miss)
+328 timing reifyNode:node_modules/borsh Completed in 11014ms
+329 http fetch GET 200 https://registry.npmjs.org/rpc-websockets/-/rpc-websockets-9.3.9.tgz 10838ms (cache miss)
+330 timing reifyNode:node_modules/rpc-websockets Completed in 11080ms
+331 timing metavuln:cache:put:security-advisory:bigint-buffer:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 319ms
+332 timing metavuln:calculate:security-advisory:bigint-buffer:1103747 Completed in 1568ms
+333 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 10893ms (cache miss)
+334 http fetch GET 200 https://registry.npmjs.org/text-encoding-utf-8/-/text-encoding-utf-8-1.0.2.tgz 10910ms (cache miss)
+335 timing reifyNode:node_modules/file-uri-to-path Completed in 11119ms
+336 http fetch GET 200 https://registry.npmjs.org/bufferutil/-/bufferutil-4.1.0.tgz 10888ms (cache miss)
+337 timing reifyNode:node_modules/bufferutil Completed in 11131ms
+338 timing metavuln:cache:put:security-advisory:uuid:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 325ms
+339 timing metavuln:calculate:security-advisory:uuid:1119441 Completed in 1619ms
+340 timing reifyNode:node_modules/text-encoding-utf-8 Completed in 11163ms
+341 timing metavuln:cache:get:security-advisory:@solana/buffer-layout-utils:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 18ms
+342 http fetch GET 200 https://registry.npmjs.org/bigint-buffer/-/bigint-buffer-1.1.5.tgz 10955ms (cache miss)
+343 timing reifyNode:node_modules/bigint-buffer Completed in 11208ms
+344 http fetch GET 200 https://registry.npmjs.org/stream-chain/-/stream-chain-2.2.5.tgz 11013ms (cache miss)
+345 timing reifyNode:node_modules/stream-chain Completed in 11219ms
+346 http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 11033ms (cache miss)
+347 timing reifyNode:node_modules/tr46 Completed in 11236ms
+348 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-3.3.2.tgz 11042ms (cache miss)
+349 timing reifyNode:node_modules/node-fetch Completed in 11253ms
+350 http fetch GET 200 https://registry.npmjs.org/@solana/codecs/-/codecs-2.0.0-rc.1.tgz 10971ms (cache miss)
+351 timing reifyNode:node_modules/@solana/codecs Completed in 11269ms
+352 http fetch GET 200 https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz 11050ms (cache miss)
+353 timing reifyNode:node_modules/es6-promise Completed in 11311ms
+354 http fetch GET 200 https://registry.npmjs.org/stream-json/-/stream-json-1.9.1.tgz 11251ms (cache miss)
+355 timing reifyNode:node_modules/stream-json Completed in 11457ms
+356 http fetch GET 200 https://registry.npmjs.org/ws/-/ws-7.5.13.tgz 11145ms (cache miss)
+357 timing reifyNode:node_modules/jayson/node_modules/ws Completed in 11464ms
+358 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-12.1.0.tgz 11458ms (cache miss)
+359 timing reifyNode:node_modules/commander Completed in 11695ms
+360 http fetch GET 200 https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-6.0.6.tgz 11506ms (cache miss)
+361 timing reifyNode:node_modules/utf-8-validate Completed in 11701ms
+362 http fetch GET 200 https://registry.npmjs.org/toml/-/toml-3.0.0.tgz 11534ms (cache miss)
+363 timing reifyNode:node_modules/toml Completed in 11738ms
+364 http fetch GET 200 https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz 11635ms (cache miss)
+365 warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+366 timing reifyNode:node_modules/node-domexception Completed in 11857ms
+367 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-data-structures/-/codecs-data-structures-2.0.0-rc.1.tgz 11668ms (cache miss)
+368 http fetch GET 200 https://registry.npmjs.org/jayson/-/jayson-4.3.0.tgz 11750ms (cache miss)
+369 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-6.28.0.tgz 11770ms (cache miss)
+370 timing reifyNode:node_modules/undici-types Completed in 11966ms
+371 timing reifyNode:node_modules/jayson Completed in 11968ms
+372 timing reifyNode:node_modules/@solana/codecs-data-structures Completed in 11967ms
+373 http fetch GET 200 https://registry.npmjs.org/@solana/spl-token-metadata/-/spl-token-metadata-0.1.6.tgz 11727ms (cache miss)
+374 timing reifyNode:node_modules/@solana/spl-token-metadata Completed in 12003ms
+375 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-14.0.1.tgz 11797ms (cache miss)
+376 timing reifyNode:node_modules/rpc-websockets/node_modules/uuid Completed in 12118ms
+377 http fetch GET 200 https://registry.npmjs.org/fast-stable-stringify/-/fast-stable-stringify-1.0.0.tgz 12031ms (cache miss)
+378 timing reifyNode:node_modules/fast-stable-stringify Completed in 12255ms
+379 http fetch GET 200 https://registry.npmjs.org/bignumber.js/-/bignumber.js-9.3.1.tgz 14041ms (cache miss)
+380 timing reifyNode:node_modules/bignumber.js Completed in 14294ms
+381 http fetch GET 200 https://registry.npmjs.org/npm 15945ms (cache miss)
+382 http fetch GET 200 https://registry.npmjs.org/@solana%2fbuffer-layout-utils 4536ms (cache miss)
+383 timing metavuln:packument:@solana/buffer-layout-utils Completed in 4542ms
+384 timing metavuln:load:security-advisory:@solana/buffer-layout-utils:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 3ms
+385 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 15514ms (cache miss)
+386 timing reifyNode:node_modules/tslib Completed in 15715ms
+387 http fetch GET 200 https://registry.npmjs.org/@solana/buffer-layout/-/buffer-layout-4.0.1.tgz 15426ms (cache miss)
+388 timing reifyNode:node_modules/@solana/buffer-layout Completed in 15716ms
+389 timing metavuln:cache:put:security-advisory:@solana/buffer-layout-utils:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 31ms
+390 timing metavuln:calculate:security-advisory:@solana/buffer-layout-utils:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 4577ms
+391 timing metavuln:cache:get:security-advisory:jayson:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 3ms
+392 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.7.tgz 15824ms (cache miss)
+393 timing reifyNode:node_modules/@babel/runtime Completed in 16121ms
+394 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-12.20.55.tgz 15893ms (cache miss)
+395 timing reifyNode:node_modules/jayson/node_modules/@types/node Completed in 16216ms
+396 http fetch GET 200 https://registry.npmjs.org/jayson 684ms (cache miss)
+397 timing metavuln:packument:jayson Completed in 688ms
+398 timing metavuln:load:security-advisory:jayson:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 13ms
+399 timing metavuln:cache:put:security-advisory:jayson:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 15ms
+400 timing metavuln:calculate:security-advisory:jayson:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 717ms
+401 timing metavuln:cache:get:security-advisory:@solana/spl-token:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 3ms
+402 http fetch GET 200 https://registry.npmjs.org/pako/-/pako-2.2.0.tgz 16310ms (cache miss)
+403 timing reifyNode:node_modules/pako Completed in 16518ms
+404 http fetch GET 200 https://registry.npmjs.org/@noble/hashes/-/hashes-1.8.0.tgz 16864ms (cache miss)
+405 timing reifyNode:node_modules/@noble/hashes Completed in 17162ms
+406 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token 771ms (cache miss)
+407 timing metavuln:packument:@solana/spl-token Completed in 776ms
+408 timing metavuln:load:security-advisory:@solana/spl-token:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 3ms
+409 timing metavuln:cache:put:security-advisory:@solana/spl-token:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 20ms
+410 timing metavuln:calculate:security-advisory:@solana/spl-token:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 800ms
+411 timing metavuln:cache:get:security-advisory:@solana/web3.js:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 3ms
+412 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz 17176ms (cache miss)
+413 timing reifyNode:node_modules/@types/node Completed in 17447ms
+414 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-2.20.3.tgz 17281ms (cache miss)
+415 timing reifyNode:node_modules/jayson/node_modules/commander Completed in 17602ms
+416 http fetch GET 200 https://registry.npmjs.org/@pump-fun/agent-payments-sdk/-/agent-payments-sdk-1.0.7.tgz 17334ms (cache miss)
+417 timing reifyNode:node_modules/@pump-fun/agent-payments-sdk Completed in 17629ms
+418 http fetch GET 200 https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz 17434ms (cache miss)
+419 timing reifyNode:node_modules/ieee754 Completed in 17651ms
+420 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 17449ms (cache miss)
+421 timing reifyNode:node_modules/base64-js Completed in 17706ms
+422 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 17398ms (cache miss)
+423 timing reifyNode:node_modules/cross-fetch/node_modules/node-fetch Completed in 17717ms
+424 http fetch GET 200 https://registry.npmjs.org/@noble/curves/-/curves-1.9.7.tgz 17729ms (cache miss)
+425 timing reifyNode:node_modules/@noble/curves Completed in 18025ms
+426 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz 21248ms (cache miss)
+427 timing reifyNode:node_modules/@types/node/node_modules/undici-types Completed in 21569ms
+428 http fetch GET 200 https://registry.npmjs.org/fastestsmallesttextencoderdecoder/-/fastestsmallesttextencoderdecoder-1.0.22.tgz 21640ms (cache miss)
+429 timing reifyNode:node_modules/fastestsmallesttextencoderdecoder Completed in 21865ms
+430 http fetch GET 200 https://registry.npmjs.org/@coral-xyz/borsh/-/borsh-0.31.1.tgz 21654ms (cache miss)
+431 timing reifyNode:node_modules/@coral-xyz/borsh Completed in 21959ms
+432 http fetch GET 200 https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-5.0.10.tgz 24031ms (cache miss)
+433 timing reifyNode:node_modules/jayson/node_modules/utf-8-validate Completed in 24350ms
+434 http fetch GET 200 https://registry.npmjs.org/@solana%2fweb3.js 7780ms (cache miss)
+435 timing metavuln:packument:@solana/web3.js Completed in 7848ms
+436 timing metavuln:load:security-advisory:@solana/web3.js:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 402ms
+437 timing metavuln:cache:put:security-advisory:@solana/web3.js:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 64ms
+438 timing metavuln:calculate:security-advisory:@solana/web3.js:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 8316ms
+439 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 23ms
+440 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:y/Ov7LpqUKpYRl7x6EabbftZxc25IFixqKgEWO9EmNKGSPtXpVOOnkp/kOVXmZnFP33IF+LW5uUE/rFsaHVKHw== Completed in 20ms
+441 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 13ms
+442 http fetch GET 200 https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz 25831ms (cache miss)
+443 timing reifyNode:node_modules/web-streams-polyfill Completed in 26027ms
+444 http fetch GET 200 https://registry.npmjs.org/tsx/-/tsx-4.23.5.tgz 25828ms attempt #2 (cache miss)
+445 timing reifyNode:node_modules/tsx Completed in 26037ms
+446 http fetch GET 200 https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz 25712ms (cache miss)
+447 timing reifyNode:node_modules/@coral-xyz/anchor/node_modules/bs58 Completed in 26041ms
+448 http fetch GET 200 https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz 25939ms (cache miss)
+449 timing reifyNode:node_modules/@solana/web3.js/node_modules/bs58 Completed in 26268ms
+450 http fetch GET 200 https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz 26054ms (cache miss)
+451 timing reifyNode:node_modules/@coral-xyz/anchor/node_modules/base-x Completed in 26395ms
+452 http fetch GET 200 https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz 26142ms (cache miss)
+453 timing reifyNode:node_modules/@solana/web3.js/node_modules/base-x Completed in 26471ms
+454 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fagent-payments-sdk 1024ms (cache miss)
+455 timing metavuln:packument:@pump-fun/agent-payments-sdk Completed in 1027ms
+456 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 1ms
+457 timing metavuln:cache:put:security-advisory:@pump-fun/agent-payments-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 19ms
+458 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 1048ms
+459 http fetch GET 200 https://registry.npmjs.org/@coral-xyz/anchor-errors/-/anchor-errors-0.31.1.tgz 26421ms (cache miss)
+460 timing reifyNode:node_modules/@coral-xyz/anchor-errors Completed in 26725ms
+461 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fpump-sdk 1233ms (cache miss)
+462 timing metavuln:packument:@pump-fun/pump-sdk Completed in 1238ms
+463 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 13ms
+464 timing metavuln:cache:put:security-advisory:@pump-fun/pump-sdk:y/Ov7LpqUKpYRl7x6EabbftZxc25IFixqKgEWO9EmNKGSPtXpVOOnkp/kOVXmZnFP33IF+LW5uUE/rFsaHVKHw== Completed in 34ms
+465 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 1291ms
+466 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-numbers/-/codecs-numbers-2.3.0.tgz 26600ms (cache miss)
+467 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/codecs-numbers Completed in 26943ms
+468 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fpump-swap-sdk 1417ms (cache miss)
+469 timing metavuln:packument:@pump-fun/pump-swap-sdk Completed in 1423ms
+470 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 9ms
+471 http fetch GET 200 https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.1.tgz 26759ms (cache miss)
+472 timing reifyNode:node_modules/@esbuild/win32-x64 Completed in 27058ms
+473 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-14.0.3.tgz 26752ms (cache miss)
+474 timing reifyNode:node_modules/@solana/web3.js/node_modules/commander Completed in 27080ms
+475 timing metavuln:cache:put:security-advisory:@pump-fun/pump-swap-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 43ms
+476 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 1476ms
+477 timing metavuln:cache:get:security-advisory:@coral-xyz/anchor:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 15ms
+478 timing metavuln:cache:get:security-advisory:@coral-xyz/borsh:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 12ms
+479 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:Zfia+iKU1rSFgierhmh+j2SVUzTG3MAvge1w3z7BH/MhbVue0UsbMkEzUxeas43vyFdegmtrJ/XGcUajBDctng== Completed in 10ms
+480 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 17ms
+481 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:Mz/uDOYMuW+RgAGAqeYivZrOLdXWL6CSsgvhcEhBilhnlz7E7YPLc6n3gI1i4uXPj3Hcdk6R+nunhPEsqwmdcw== Completed in 27ms
+482 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 18ms
+483 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:g9zIWk0YA2nAZpWgS6bwcRH2E6Cesi+kyNMmUwwoCTdZ1S4Ya/srKzjo9gNO1tKZo5eU06i1ickv5mJ171brGw== Completed in 45ms
+484 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 8ms
+485 timing metavuln:cache:get:security-advisory:@solana/buffer-layout-utils:ugBSkQEfUcydwrjY+nDDWRcFgE7L7FobjEi7pgA48yewT6QHnJx3pZuL0U27a4YwYzVLkani9AGo8EpSlN/CPA== Completed in 53ms
+486 timing metavuln:load:security-advisory:@solana/buffer-layout-utils:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 58ms
+487 timing metavuln:cache:get:security-advisory:@solana/spl-token:IVdGlqC9KT5oUgGjhI2EDzId0TxRdeYQ+qqxhgm8ED1okjE4Ko5ALaIr04pU0cEo9Wl7rMgEX6bJMVXHxR/+tg== Completed in 111ms
+488 timing metavuln:load:security-advisory:@solana/spl-token:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 114ms
+489 timing metavuln:cache:get:security-advisory:@solana/spl-token-group:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 226ms
+490 timing metavuln:cache:get:security-advisory:@solana/spl-token-metadata:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 223ms
+491 timing metavuln:cache:put:security-advisory:@pump-fun/pump-swap-sdk:g9zIWk0YA2nAZpWgS6bwcRH2E6Cesi+kyNMmUwwoCTdZ1S4Ya/srKzjo9gNO1tKZo5eU06i1ickv5mJ171brGw== Completed in 284ms
+492 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 337ms
+493 http fetch GET 200 https://registry.npmjs.org/bs58/-/bs58-4.0.1.tgz 27350ms (cache miss)
+494 timing metavuln:cache:put:security-advisory:@solana/spl-token:IVdGlqC9KT5oUgGjhI2EDzId0TxRdeYQ+qqxhgm8ED1okjE4Ko5ALaIr04pU0cEo9Wl7rMgEX6bJMVXHxR/+tg== Completed in 123ms
+495 timing metavuln:calculate:security-advisory:@solana/spl-token:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 348ms
+496 timing metavuln:cache:put:security-advisory:@pump-fun/pump-sdk:Mz/uDOYMuW+RgAGAqeYivZrOLdXWL6CSsgvhcEhBilhnlz7E7YPLc6n3gI1i4uXPj3Hcdk6R+nunhPEsqwmdcw== Completed in 305ms
+497 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 350ms
+498 timing reifyNode:node_modules/borsh/node_modules/bs58 Completed in 27688ms
+499 timing metavuln:cache:put:security-advisory:@pump-fun/agent-payments-sdk:Zfia+iKU1rSFgierhmh+j2SVUzTG3MAvge1w3z7BH/MhbVue0UsbMkEzUxeas43vyFdegmtrJ/XGcUajBDctng== Completed in 334ms
+500 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 362ms
+501 timing metavuln:cache:put:security-advisory:@solana/buffer-layout-utils:ugBSkQEfUcydwrjY+nDDWRcFgE7L7FobjEi7pgA48yewT6QHnJx3pZuL0U27a4YwYzVLkani9AGo8EpSlN/CPA== Completed in 263ms
+502 timing metavuln:calculate:security-advisory:@solana/buffer-layout-utils:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 374ms
+503 http fetch GET 200 https://registry.npmjs.org/base-x/-/base-x-3.0.11.tgz 27390ms (cache miss)
+504 timing reifyNode:node_modules/borsh/node_modules/base-x Completed in 27756ms
+505 http fetch GET 200 https://registry.npmjs.org/@coral-xyz%2fanchor 570ms (cache miss)
+506 timing metavuln:packument:@coral-xyz/anchor Completed in 575ms
+507 timing metavuln:load:security-advisory:@coral-xyz/anchor:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 34ms
+508 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token-group 604ms (cache miss)
+509 timing metavuln:packument:@solana/spl-token-group Completed in 607ms
+510 timing metavuln:load:security-advisory:@solana/spl-token-group:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 35ms
+511 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token-metadata 650ms (cache miss)
+512 timing metavuln:packument:@solana/spl-token-metadata Completed in 652ms
+513 timing metavuln:load:security-advisory:@solana/spl-token-metadata:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 21ms
+514 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.28.1.tgz 27784ms (cache miss)
+515 timing reifyNode:node_modules/esbuild Completed in 28014ms
+516 timing metavuln:cache:put:security-advisory:@solana/spl-token-group:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 70ms
+517 timing metavuln:calculate:security-advisory:@solana/spl-token-group:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 714ms
+518 timing metavuln:cache:put:security-advisory:@coral-xyz/anchor:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 112ms
+519 timing metavuln:calculate:security-advisory:@coral-xyz/anchor:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 723ms
+520 timing metavuln:cache:put:security-advisory:@solana/spl-token-metadata:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 48ms
+521 timing metavuln:calculate:security-advisory:@solana/spl-token-metadata:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 722ms
+522 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 27860ms (cache miss)
+523 timing reifyNode:node_modules/@solana/web3.js/node_modules/node-fetch Completed in 28184ms
+524 http fetch GET 200 https://registry.npmjs.org/@coral-xyz%2fborsh 864ms (cache miss)
+525 timing metavuln:packument:@coral-xyz/borsh Completed in 866ms
+526 timing metavuln:load:security-advisory:@coral-xyz/borsh:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 24ms
+527 http fetch GET 200 https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz 28041ms (cache miss)
+528 timing reifyNode:node_modules/typescript Completed in 28247ms
+529 timing metavuln:cache:put:security-advisory:@coral-xyz/borsh:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 57ms
+530 timing metavuln:calculate:security-advisory:@coral-xyz/borsh:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 947ms
+531 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:62WZVpyre/SJZCeywjPY0Dy+mRIE18kyJrTNXt/JemQq8qU/5IM9mo5fIXPZ1x89BaFQtcRkH/wcw8zxsotcaw== Completed in 3ms
+532 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 8ms
+533 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-core/-/codecs-core-2.3.0.tgz 27980ms (cache miss)
+534 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/codecs-core Completed in 28317ms
+535 timing metavuln:cache:put:security-advisory:@pump-fun/pump-sdk:62WZVpyre/SJZCeywjPY0Dy+mRIE18kyJrTNXt/JemQq8qU/5IM9mo5fIXPZ1x89BaFQtcRkH/wcw8zxsotcaw== Completed in 36ms
+536 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 48ms
+537 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:upIPrSPsGalcw5Kh4FHmt821c5qYBbrkUe7eYDRAXYanKeul2SOhHJicnJoXR85BSosixJLJwtNi95CVBgWnVQ== Completed in 1ms
+538 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 27ms
+539 timing metavuln:cache:put:security-advisory:@pump-fun/pump-sdk:upIPrSPsGalcw5Kh4FHmt821c5qYBbrkUe7eYDRAXYanKeul2SOhHJicnJoXR85BSosixJLJwtNi95CVBgWnVQ== Completed in 26ms
+540 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 55ms
+541 timing metavuln:cache:get:security-advisory:@solana/spl-token:4W85v+23N0fJPmt2dJ8LcHDC7XZ3km64KBwOC3jJnNmnruI9Y1cBF5nFUZqizo4TAIWDss+sHGrL1UOjJ/wktg== Completed in 3ms
+542 timing metavuln:load:security-advisory:@solana/spl-token:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 4ms
+543 timing metavuln:cache:put:security-advisory:@solana/spl-token:4W85v+23N0fJPmt2dJ8LcHDC7XZ3km64KBwOC3jJnNmnruI9Y1cBF5nFUZqizo4TAIWDss+sHGrL1UOjJ/wktg== Completed in 36ms
+544 timing metavuln:calculate:security-advisory:@solana/spl-token:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 44ms
+545 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:iVbOKwsCmnDij4OKuDoUTi+PV8qmmkVLroEK94ygUtCmQLiYPErGpAXZnBwIXWRCX0dWmeSH9Qzu6WSITsbjGw== Completed in 2ms
+546 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 1ms
+547 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:Pipd+nK3aVzzSdLcmkScCVd7bWIEU2Mpp0QuFzGWpcN4/FfHVNqod1PFsACb7mb2Exd7JmRh/zYIIqsfrBIiGA== Completed in 4ms
+548 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 10ms
+549 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:QhpLqHrV7Up+BedABhEQ917bdYGxB7mfgJ28gNc0CtIo5RksUB8qv2IRkor5XRIg4go97BaNyT7AHBs7X80ePg== Completed in 14ms
+550 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 6ms
+551 timing metavuln:cache:put:security-advisory:@pump-fun/agent-payments-sdk:iVbOKwsCmnDij4OKuDoUTi+PV8qmmkVLroEK94ygUtCmQLiYPErGpAXZnBwIXWRCX0dWmeSH9Qzu6WSITsbjGw== Completed in 48ms
+552 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 52ms
+553 timing metavuln:cache:put:security-advisory:@pump-fun/pump-sdk:Pipd+nK3aVzzSdLcmkScCVd7bWIEU2Mpp0QuFzGWpcN4/FfHVNqod1PFsACb7mb2Exd7JmRh/zYIIqsfrBIiGA== Completed in 41ms
+554 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 55ms
+555 timing metavuln:cache:put:security-advisory:@pump-fun/pump-swap-sdk:QhpLqHrV7Up+BedABhEQ917bdYGxB7mfgJ28gNc0CtIo5RksUB8qv2IRkor5XRIg4go97BaNyT7AHBs7X80ePg== Completed in 34ms
+556 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 55ms
+557 timing metavuln:cache:get:security-advisory:@solana/spl-token:R5FZLNM3E4S0QTJ+nwnvyXkujlkUI9ZlFn9iQSQ7fqS2j2IqUQKpvxaB1vwCWQA4aT7zkJmt8RnZScOCc9p5Gg== Completed in 3ms
+558 timing metavuln:load:security-advisory:@solana/spl-token:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 3ms
+559 timing metavuln:cache:put:security-advisory:@solana/spl-token:R5FZLNM3E4S0QTJ+nwnvyXkujlkUI9ZlFn9iQSQ7fqS2j2IqUQKpvxaB1vwCWQA4aT7zkJmt8RnZScOCc9p5Gg== Completed in 26ms
+560 timing metavuln:calculate:security-advisory:@solana/spl-token:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 32ms
+561 timing metavuln:cache:get:security-advisory:@coral-xyz/anchor:E+YzZD5r4AjoEvOJBBw2BGZt/ogACNTWorzbHxtHFnrDgwjKAtj+PTz2OjmQCVA5TWPJzVEwzJaAphA8APxetg== Completed in 5ms
+562 timing metavuln:load:security-advisory:@coral-xyz/anchor:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 3ms
+563 http fetch GET 200 https://registry.npmjs.org/@solana/errors/-/errors-2.3.0.tgz 28214ms (cache miss)
+564 timing metavuln:cache:put:security-advisory:@coral-xyz/anchor:E+YzZD5r4AjoEvOJBBw2BGZt/ogACNTWorzbHxtHFnrDgwjKAtj+PTz2OjmQCVA5TWPJzVEwzJaAphA8APxetg== Completed in 29ms
+565 timing metavuln:calculate:security-advisory:@coral-xyz/anchor:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 38ms
+566 timing auditReport:init Completed in 19024ms
+567 timing reify:audit Completed in 28571ms
+568 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/errors Completed in 28551ms
+569 http fetch GET 200 https://registry.npmjs.org/@solana/errors/-/errors-2.0.0-rc.1.tgz 28334ms (cache miss)
+570 timing reifyNode:node_modules/@solana/errors Completed in 28619ms
+571 http fetch GET 200 https://registry.npmjs.org/@pump-fun/pump-sdk/-/pump-sdk-1.36.0.tgz 28359ms (cache miss)
+572 timing reifyNode:node_modules/@pump-fun/pump-sdk Completed in 28657ms
+573 http fetch GET 200 https://registry.npmjs.org/superstruct/-/superstruct-2.0.2.tgz 28335ms (cache miss)
+574 timing reifyNode:node_modules/@solana/web3.js/node_modules/superstruct Completed in 28659ms
+575 http fetch GET 200 https://registry.npmjs.org/@pump-fun/pump-swap-sdk/-/pump-swap-sdk-1.19.0.tgz 28758ms (cache miss)
+576 timing reifyNode:node_modules/@pump-fun/pump-swap-sdk Completed in 29053ms
+577 http fetch GET 200 https://registry.npmjs.org/@solana/codecs-core/-/codecs-core-2.0.0-rc.1.tgz 29125ms (cache miss)
+578 timing reifyNode:node_modules/@solana/codecs-core Completed in 29411ms
+579 http fetch GET 200 https://registry.npmjs.org/@solana/web3.js/-/web3.js-1.98.4.tgz 30888ms (cache miss)
+580 timing reifyNode:node_modules/@solana/web3.js Completed in 31160ms
+581 http fetch GET 200 https://registry.npmjs.org/@coral-xyz/anchor/-/anchor-0.31.1.tgz 31976ms (cache miss)
+582 timing reifyNode:node_modules/@coral-xyz/anchor Completed in 32283ms
+583 http fetch GET 200 https://registry.npmjs.org/@solana/spl-token/-/spl-token-0.4.15.tgz 32230ms (cache miss)
+584 timing reifyNode:node_modules/@solana/spl-token Completed in 32504ms
+585 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.23.tgz 33964ms (cache miss)
+586 timing reifyNode:node_modules/@swc/helpers Completed in 34223ms
+587 http fetch GET 200 https://registry.npmjs.org/bn.js/-/bn.js-5.2.5.tgz 44539ms (cache miss)
+588 timing reifyNode:node_modules/bn.js Completed in 44790ms
+589 http fetch GET 200 https://registry.npmjs.org/superstruct/-/superstruct-0.15.5.tgz 44888ms (cache miss)
+590 timing reifyNode:node_modules/superstruct Completed in 45094ms
+591 timing reify:unpack Completed in 45099ms
+592 timing reify:unretire Completed in 2ms
+593 timing build:queue Completed in 68ms
+594 timing build:link:node_modules/esbuild Completed in 103ms
+595 timing build:link:node_modules/@solana/errors Completed in 104ms
+596 timing build:link:node_modules/rpc-websockets/node_modules/uuid Completed in 100ms
+597 timing build:link:node_modules/@solana/web3.js/node_modules/@solana/errors Completed in 102ms
+598 timing build:link:node_modules/typescript Completed in 102ms
+599 timing build:link:node_modules/uuid Completed in 102ms
+600 timing build:link:node_modules/tsx Completed in 104ms
+601 timing build:link:node_modules/jayson Completed in 106ms
+602 timing build:link:node_modules/node-gyp-build Completed in 105ms
+603 timing build:link Completed in 108ms
+604 info run bigint-buffer@1.1.5 install node_modules/bigint-buffer npm run rebuild || echo "Couldn't build bindings. Non-native version used."
+605 info run bufferutil@4.1.0 install node_modules/bufferutil node-gyp-build
+606 info run utf-8-validate@6.0.6 install node_modules/utf-8-validate node-gyp-build
+607 info run utf-8-validate@5.0.10 install node_modules/jayson/node_modules/utf-8-validate node-gyp-build
+608 info run utf-8-validate@5.0.10 install { code: 1, signal: null }
+609 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\jayson\node_modules\utf-8-validate
+610 silly reify mark deleted [
+610 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\jayson\\node_modules\\utf-8-validate'
+610 silly reify ]
+611 timing build:run:install:node_modules/jayson/node_modules/utf-8-validate Completed in 327ms
+612 info run utf-8-validate@6.0.6 install { code: 1, signal: null }
+613 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\utf-8-validate
+614 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\utf-8-validate' ]
+615 timing build:run:install:node_modules/utf-8-validate Completed in 355ms
+616 info run bufferutil@4.1.0 install { code: 1, signal: null }
+617 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\bufferutil
+618 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\bufferutil' ]
+619 timing build:run:install:node_modules/bufferutil Completed in 412ms
+620 info run bigint-buffer@1.1.5 install { code: 0, signal: null }
+621 timing build:run:install:node_modules/bigint-buffer Completed in 4728ms
+622 timing build:run:install Completed in 4729ms
+623 info run esbuild@0.28.1 postinstall node_modules/esbuild node install.js
+624 info run esbuild@0.28.1 postinstall { code: 1, signal: null }
+625 timing reify:rollback:createSparse Completed in 1704ms
+626 timing reify:rollback:retireShallow Completed in 0ms
+627 timing command:ci Completed in 52341ms
+628 notice
+628 notice New major version of npm available! 10.2.4 -> 12.0.2
+628 notice Changelog: <https://github.com/npm/cli/releases/tag/v12.0.2>
+628 notice Run `npm install -g npm@12.0.2` to update!
+628 notice
+629 verbose stack Error: command failed
+629 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:53:27)
+629 verbose stack     at ChildProcess.emit (node:events:518:28)
+629 verbose stack     at maybeClose (node:internal/child_process:1105:16)
+629 verbose stack     at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+630 verbose pkgid esbuild@0.28.1
+631 verbose cwd C:\Users\HP\Desktop\MY BOT
+632 verbose Windows_NT 10.0.26200
+633 verbose node v20.11.1
+634 verbose npm  v10.2.4
+635 error code 1
+636 error path C:\Users\HP\Desktop\MY BOT\node_modules\esbuild
+637 error command failed
+638 error command C:\WINDOWS\system32\cmd.exe /d /s /c node install.js
+639 error node:fs:2711
+639 error       const stats = binding.lstat(baseLong, true, undefined, true /* throwIfNoEntry */);
+639 error                             ^
+639 error
+639 error Error: EPERM: operation not permitted, lstat 'C:\Users\HP'
+639 error     at Object.realpathSync (node:fs:2711:29)
+639 error     at toRealPath (node:internal/modules/helpers:55:13)
+639 error     at Module._findPath (node:internal/modules/cjs/loader:697:22)
+639 error     at resolveMainPath (node:internal/modules/run_main:26:23)
+639 error     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:24)
+639 error     at node:internal/main/run_main_module:28:49 {
+639 error   errno: -4048,
+639 error   code: 'EPERM',
+639 error   syscall: 'lstat',
+639 error   path: 'C:\\Users\\HP'
+639 error }
+639 error
+639 error Node.js v20.11.1
+640 verbose exit 1
+641 timing npm Completed in 53314ms
+642 verbose unfinished npm timer reify 1788215405654
+643 verbose unfinished npm timer reify:build 1788215450890
+644 verbose unfinished npm timer build 1788215450891
+645 verbose unfinished npm timer build:deps 1788215450892
+646 verbose unfinished npm timer build:run:postinstall 1788215455797
+647 verbose unfinished npm timer build:run:postinstall:node_modules/esbuild 1788215455797
+648 verbose code 1
+649 error A complete log of this run can be found in: C:\Users\HP\Desktop\MY BOT\.npm-cache\_logs\2026-08-31T22_30_04_505Z-debug-0.log

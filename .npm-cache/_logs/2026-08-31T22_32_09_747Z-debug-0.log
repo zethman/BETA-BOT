@@ -1,0 +1,716 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.2.4
+2 info using node@v20.11.1
+3 timing npm:load:whichnode Completed in 4ms
+4 timing config:load:defaults Completed in 9ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 7ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:C:\Users\HP\Desktop\MY BOT\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:C:\Users\HP\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\HP\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 2ms
+16 timing config:load Completed in 26ms
+17 timing npm:load:configload Completed in 26ms
+18 timing config:load:flatten Completed in 5ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 2ms
+21 verbose title npm ci
+22 verbose argv "ci" "--cache" ".npm-cache" "--loglevel" "error"
+23 timing npm:load:setTitle Completed in 2ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:C:\Users\HP\Desktop\MY BOT\.npm-cache\_logs\2026-08-31T22_32_09_747Z-
+26 verbose logfile C:\Users\HP\Desktop\MY BOT\.npm-cache\_logs\2026-08-31T22_32_09_747Z-debug-0.log
+27 timing npm:load:logFile Completed in 31ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 135ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 71ms
+34 timing idealTree:userRequests Completed in 1ms
+35 silly idealTree buildDeps
+36 timing idealTree:#root Completed in 0ms
+37 timing idealTree:buildDeps Completed in 2ms
+38 timing idealTree:fixDepFlags Completed in 0ms
+39 warn EBADENGINE Unsupported engine {
+39 warn EBADENGINE   package: '@solana/codecs-core@2.3.0',
+39 warn EBADENGINE   required: { node: '>=20.18.0' },
+39 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+39 warn EBADENGINE }
+40 warn EBADENGINE Unsupported engine {
+40 warn EBADENGINE   package: '@solana/codecs-numbers@2.3.0',
+40 warn EBADENGINE   required: { node: '>=20.18.0' },
+40 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+40 warn EBADENGINE }
+41 warn EBADENGINE Unsupported engine {
+41 warn EBADENGINE   package: '@solana/errors@2.3.0',
+41 warn EBADENGINE   required: { node: '>=20.18.0' },
+41 warn EBADENGINE   current: { node: 'v20.11.1', npm: '10.2.4' }
+41 warn EBADENGINE }
+42 timing idealTree Completed in 84ms
+43 timing npm-ci:rm Completed in 13ms
+44 timing reify:loadTrees Completed in 8ms
+45 timing reify:diffTrees Completed in 8ms
+46 silly reify moves {}
+47 timing reify:retireShallow Completed in 1ms
+48 timing reify:createSparse Completed in 120ms
+49 timing reify:loadBundles Completed in 0ms
+50 silly audit bulk request {
+50 silly audit   '@babel/runtime': [ '7.29.7' ],
+50 silly audit   '@coral-xyz/anchor': [ '0.31.1' ],
+50 silly audit   '@coral-xyz/anchor-errors': [ '0.31.1' ],
+50 silly audit   'base-x': [ '3.0.11', '5.0.1' ],
+50 silly audit   bs58: [ '4.0.1', '6.0.0' ],
+50 silly audit   '@coral-xyz/borsh': [ '0.31.1' ],
+50 silly audit   '@esbuild/aix-ppc64': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-arm': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/android-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/darwin-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/darwin-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/freebsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/freebsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-arm': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-ia32': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-loong64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-mips64el': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-ppc64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-riscv64': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-s390x': [ '0.28.1' ],
+50 silly audit   '@esbuild/linux-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/netbsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/netbsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openbsd-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openbsd-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/openharmony-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/sunos-x64': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-arm64': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-ia32': [ '0.28.1' ],
+50 silly audit   '@esbuild/win32-x64': [ '0.28.1' ],
+50 silly audit   '@noble/curves': [ '1.9.7' ],
+50 silly audit   '@noble/hashes': [ '1.8.0' ],
+50 silly audit   '@pump-fun/agent-payments-sdk': [ '1.0.7' ],
+50 silly audit   '@pump-fun/pump-sdk': [ '1.36.0' ],
+50 silly audit   '@pump-fun/pump-swap-sdk': [ '1.19.0' ],
+50 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.62.4' ],
+50 silly audit   '@solana/buffer-layout': [ '4.0.1' ],
+50 silly audit   '@solana/buffer-layout-utils': [ '0.3.0' ],
+50 silly audit   '@solana/codecs': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/codecs-core': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/codecs-data-structures': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/codecs-numbers': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/codecs-strings': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/errors': [ '2.0.0-rc.1', '2.3.0' ],
+50 silly audit   '@solana/options': [ '2.0.0-rc.1' ],
+50 silly audit   '@solana/spl-token': [ '0.4.15' ],
+50 silly audit   '@solana/spl-token-group': [ '0.0.7' ],
+50 silly audit   '@solana/spl-token-metadata': [ '0.1.6' ],
+50 silly audit   '@solana/web3.js': [ '1.98.4' ],
+50 silly audit   commander: [ '14.0.3', '12.1.0', '2.20.3' ],
+50 silly audit   'node-fetch': [ '2.7.0', '3.3.2' ],
+50 silly audit   superstruct: [ '2.0.2', '0.15.5' ],
+50 silly audit   '@swc/helpers': [ '0.5.23' ],
+50 silly audit   '@types/bn.js': [ '5.2.0' ],
+50 silly audit   '@types/connect': [ '3.4.38' ],
+50 silly audit   '@types/node': [ '20.19.43', '12.20.55' ],
+50 silly audit   'undici-types': [ '6.21.0', '6.28.0' ],
+50 silly audit   '@types/uuid': [ '10.0.0' ],
+50 silly audit   '@types/ws': [ '8.18.1', '7.4.7' ],
+50 silly audit   agentkeepalive: [ '4.6.0' ],
+50 silly audit   'base64-js': [ '1.5.1' ],
+50 silly audit   'bigint-buffer': [ '1.1.5' ],
+50 silly audit   'bignumber.js': [ '9.3.1' ],
+50 silly audit   bindings: [ '1.5.0' ],
+50 silly audit   'bn.js': [ '5.2.5' ],
+50 silly audit   borsh: [ '0.7.0' ],
+50 silly audit   buffer: [ '6.0.3' ],
+50 silly audit   'buffer-layout': [ '1.2.2' ],
+50 silly audit   bufferutil: [ '4.1.0' ],
+50 silly audit   camelcase: [ '6.3.0' ],
+50 silly audit   chalk: [ '5.6.2' ],
+50 silly audit   'cross-fetch': [ '3.2.0' ],
+50 silly audit   'data-uri-to-buffer': [ '4.0.1' ],
+50 silly audit   delay: [ '5.0.0' ],
+50 silly audit   dotenv: [ '16.6.1' ],
+50 silly audit   'es6-promise': [ '4.2.8' ],
+50 silly audit   'es6-promisify': [ '5.0.0' ],
+50 silly audit   esbuild: [ '0.28.1' ],
+50 silly audit   eventemitter3: [ '4.0.7', '5.0.4' ],
+50 silly audit   eyes: [ '0.1.8' ],
+50 silly audit   'fast-stable-stringify': [ '1.0.0' ],
+50 silly audit   fastestsmallesttextencoderdecoder: [ '1.0.22' ],
+50 silly audit   'fetch-blob': [ '3.2.0' ],
+50 silly audit   'file-uri-to-path': [ '1.0.0' ],
+50 silly audit   'formdata-polyfill': [ '4.0.10' ],
+50 silly audit   fsevents: [ '2.3.3' ],
+50 silly audit   'humanize-ms': [ '1.2.1' ],
+50 silly audit   ieee754: [ '1.2.1' ],
+50 silly audit   'isomorphic-ws': [ '4.0.1' ],
+50 silly audit   jayson: [ '4.3.0' ],
+50 silly audit   'utf-8-validate': [ '5.0.10', '6.0.6' ],
+50 silly audit   ws: [ '7.5.13', '8.21.3' ],
+50 silly audit   'json-stringify-safe': [ '5.0.1' ],
+50 silly audit   ms: [ '2.1.3' ],
+50 silly audit   'node-domexception': [ '1.0.0' ],
+50 silly audit   'node-gyp-build': [ '4.8.4' ],
+50 silly audit   pako: [ '2.2.0' ],
+50 silly audit   'rpc-websockets': [ '9.3.9' ],
+50 silly audit   uuid: [ '14.0.1', '8.3.2' ],
+50 silly audit   'safe-buffer': [ '5.2.1' ],
+50 silly audit   'stream-chain': [ '2.2.5' ],
+50 silly audit   'stream-json': [ '1.9.1' ],
+50 silly audit   'text-encoding-utf-8': [ '1.0.2' ],
+50 silly audit   toml: [ '3.0.0' ],
+50 silly audit   tr46: [ '0.0.3' ],
+50 silly audit   tslib: [ '2.8.1' ],
+50 silly audit   tsx: [ '4.23.5' ],
+50 silly audit   typescript: [ '5.9.3' ],
+50 silly audit   'web-streams-polyfill': [ '3.3.3' ],
+50 silly audit   'webidl-conversions': [ '3.0.1' ],
+50 silly audit   'whatwg-url': [ '5.0.0' ]
+50 silly audit }
+51 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\fsevents
+52 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\fsevents' ]
+53 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@rollup\rollup-linux-x64-gnu
+54 silly reify mark deleted [
+54 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+54 silly reify ]
+55 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\win32-ia32
+56 silly reify mark deleted [
+56 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\win32-ia32'
+56 silly reify ]
+57 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\win32-arm64
+58 silly reify mark deleted [
+58 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\win32-arm64'
+58 silly reify ]
+59 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\sunos-x64
+60 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\sunos-x64' ]
+61 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openharmony-arm64
+62 silly reify mark deleted [
+62 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openharmony-arm64'
+62 silly reify ]
+63 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openbsd-x64
+64 silly reify mark deleted [
+64 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openbsd-x64'
+64 silly reify ]
+65 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\openbsd-arm64
+66 silly reify mark deleted [
+66 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\openbsd-arm64'
+66 silly reify ]
+67 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\netbsd-x64
+68 silly reify mark deleted [
+68 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\netbsd-x64'
+68 silly reify ]
+69 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\netbsd-arm64
+70 silly reify mark deleted [
+70 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\netbsd-arm64'
+70 silly reify ]
+71 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-x64
+72 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-x64' ]
+73 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-s390x
+74 silly reify mark deleted [
+74 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-s390x'
+74 silly reify ]
+75 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-riscv64
+76 silly reify mark deleted [
+76 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-riscv64'
+76 silly reify ]
+77 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-ppc64
+78 silly reify mark deleted [
+78 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-ppc64'
+78 silly reify ]
+79 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-mips64el
+80 silly reify mark deleted [
+80 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-mips64el'
+80 silly reify ]
+81 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-loong64
+82 silly reify mark deleted [
+82 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-loong64'
+82 silly reify ]
+83 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-ia32
+84 silly reify mark deleted [
+84 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-ia32'
+84 silly reify ]
+85 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-arm64
+86 silly reify mark deleted [
+86 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-arm64'
+86 silly reify ]
+87 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\linux-arm
+88 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\linux-arm' ]
+89 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\freebsd-x64
+90 silly reify mark deleted [
+90 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\freebsd-x64'
+90 silly reify ]
+91 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\freebsd-arm64
+92 silly reify mark deleted [
+92 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\freebsd-arm64'
+92 silly reify ]
+93 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\darwin-x64
+94 silly reify mark deleted [
+94 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\darwin-x64'
+94 silly reify ]
+95 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\darwin-arm64
+96 silly reify mark deleted [
+96 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\darwin-arm64'
+96 silly reify ]
+97 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-x64
+98 silly reify mark deleted [
+98 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-x64'
+98 silly reify ]
+99 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-arm64
+100 silly reify mark deleted [
+100 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-arm64'
+100 silly reify ]
+101 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\android-arm
+102 silly reify mark deleted [
+102 silly reify   'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\android-arm'
+102 silly reify ]
+103 verbose reify failed optional dependency C:\Users\HP\Desktop\MY BOT\node_modules\@esbuild\aix-ppc64
+104 silly reify mark deleted [ 'C:\\Users\\HP\\Desktop\\MY BOT\\node_modules\\@esbuild\\aix-ppc64' ]
+105 timing reifyNode:node_modules/fsevents Completed in 229ms
+106 timing reifyNode:node_modules/@rollup/rollup-linux-x64-gnu Completed in 223ms
+107 timing reifyNode:node_modules/@esbuild/win32-ia32 Completed in 223ms
+108 timing reifyNode:node_modules/@esbuild/win32-arm64 Completed in 223ms
+109 timing reifyNode:node_modules/@esbuild/sunos-x64 Completed in 223ms
+110 timing reifyNode:node_modules/@esbuild/openharmony-arm64 Completed in 223ms
+111 timing reifyNode:node_modules/@esbuild/openbsd-x64 Completed in 223ms
+112 timing reifyNode:node_modules/@esbuild/openbsd-arm64 Completed in 223ms
+113 timing reifyNode:node_modules/@esbuild/netbsd-x64 Completed in 224ms
+114 timing reifyNode:node_modules/@esbuild/netbsd-arm64 Completed in 224ms
+115 timing reifyNode:node_modules/@esbuild/linux-x64 Completed in 224ms
+116 timing reifyNode:node_modules/@esbuild/linux-s390x Completed in 224ms
+117 timing reifyNode:node_modules/@esbuild/linux-riscv64 Completed in 224ms
+118 timing reifyNode:node_modules/@esbuild/linux-ppc64 Completed in 223ms
+119 timing reifyNode:node_modules/@esbuild/linux-mips64el Completed in 223ms
+120 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 223ms
+121 timing reifyNode:node_modules/@esbuild/linux-ia32 Completed in 224ms
+122 timing reifyNode:node_modules/@esbuild/linux-arm64 Completed in 224ms
+123 timing reifyNode:node_modules/@esbuild/linux-arm Completed in 224ms
+124 timing reifyNode:node_modules/@esbuild/freebsd-x64 Completed in 224ms
+125 timing reifyNode:node_modules/@esbuild/freebsd-arm64 Completed in 224ms
+126 timing reifyNode:node_modules/@esbuild/darwin-x64 Completed in 225ms
+127 timing reifyNode:node_modules/@esbuild/darwin-arm64 Completed in 225ms
+128 timing reifyNode:node_modules/@esbuild/android-x64 Completed in 225ms
+129 timing reifyNode:node_modules/@esbuild/android-arm64 Completed in 225ms
+130 timing reifyNode:node_modules/@esbuild/android-arm Completed in 225ms
+131 timing reifyNode:node_modules/@esbuild/aix-ppc64 Completed in 224ms
+132 timing reifyNode:node_modules/ms Completed in 2106ms
+133 timing reifyNode:node_modules/bindings Completed in 2106ms
+134 timing reifyNode:node_modules/@types/connect Completed in 2107ms
+135 timing reifyNode:node_modules/@types/bn.js Completed in 2109ms
+136 timing reifyNode:node_modules/borsh/node_modules/bs58 Completed in 2113ms
+137 timing reifyNode:node_modules/@solana/web3.js/node_modules/bs58 Completed in 2114ms
+138 timing reifyNode:node_modules/@coral-xyz/anchor/node_modules/bs58 Completed in 2110ms
+139 timing reifyNode:node_modules/webidl-conversions Completed in 2125ms
+140 timing reifyNode:node_modules/es6-promisify Completed in 2137ms
+141 timing reifyNode:node_modules/jayson/node_modules/@types/ws Completed in 2159ms
+142 timing reifyNode:node_modules/humanize-ms Completed in 2211ms
+143 timing reifyNode:node_modules/ieee754 Completed in 2212ms
+144 timing reifyNode:node_modules/camelcase Completed in 2211ms
+145 timing reifyNode:node_modules/@types/uuid Completed in 2213ms
+146 timing reifyNode:node_modules/delay Completed in 2224ms
+147 timing reifyNode:node_modules/borsh/node_modules/base-x Completed in 2239ms
+148 timing reifyNode:node_modules/safe-buffer Completed in 2246ms
+149 timing reifyNode:node_modules/@solana/web3.js/node_modules/base-x Completed in 2244ms
+150 timing reifyNode:node_modules/@coral-xyz/anchor/node_modules/base-x Completed in 2240ms
+151 timing reifyNode:node_modules/@types/ws Completed in 2250ms
+152 timing reifyNode:node_modules/@coral-xyz/borsh Completed in 2250ms
+153 timing reifyNode:node_modules/@coral-xyz/anchor-errors Completed in 2253ms
+154 timing reifyNode:node_modules/bn.js Completed in 2266ms
+155 timing reifyNode:node_modules/isomorphic-ws Completed in 2284ms
+156 timing reifyNode:node_modules/base64-js Completed in 2288ms
+157 timing reifyNode:node_modules/eyes Completed in 2319ms
+158 timing reifyNode:node_modules/data-uri-to-buffer Completed in 2322ms
+159 timing reifyNode:node_modules/fastestsmallesttextencoderdecoder Completed in 2333ms
+160 timing reifyNode:node_modules/borsh Completed in 2333ms
+161 timing reifyNode:node_modules/jayson/node_modules/commander Completed in 2373ms
+162 timing reifyNode:node_modules/bs58 Completed in 2378ms
+163 timing reifyNode:node_modules/buffer Completed in 2380ms
+164 timing reifyNode:node_modules/base-x Completed in 2396ms
+165 timing reifyNode:node_modules/formdata-polyfill Completed in 2498ms
+166 timing reifyNode:node_modules/eventemitter3 Completed in 2525ms
+167 timing reifyNode:node_modules/whatwg-url Completed in 2533ms
+168 timing reifyNode:node_modules/node-gyp-build Completed in 2533ms
+169 timing reifyNode:node_modules/tr46 Completed in 2550ms
+170 timing reifyNode:node_modules/json-stringify-safe Completed in 2594ms
+171 timing reifyNode:node_modules/@solana/buffer-layout Completed in 2593ms
+172 timing reifyNode:node_modules/cross-fetch/node_modules/node-fetch Completed in 2613ms
+173 timing reifyNode:node_modules/@solana/web3.js/node_modules/node-fetch Completed in 2624ms
+174 timing reifyNode:node_modules/text-encoding-utf-8 Completed in 2629ms
+175 timing reifyNode:node_modules/agentkeepalive Completed in 2635ms
+176 timing reifyNode:node_modules/esbuild Completed in 2649ms
+177 timing reifyNode:node_modules/@pump-fun/agent-payments-sdk Completed in 2658ms
+178 timing reifyNode:node_modules/fetch-blob Completed in 2667ms
+179 timing reifyNode:node_modules/file-uri-to-path Completed in 2667ms
+180 timing reifyNode:node_modules/rpc-websockets/node_modules/eventemitter3 Completed in 2817ms
+181 timing reifyNode:node_modules/dotenv Completed in 2818ms
+182 timing reifyNode:node_modules/chalk Completed in 2860ms
+183 timing reifyNode:node_modules/tslib Completed in 2893ms
+184 timing reifyNode:node_modules/cross-fetch Completed in 2895ms
+185 timing reifyNode:node_modules/@solana/codecs Completed in 2895ms
+186 timing reifyNode:node_modules/bignumber.js Completed in 2906ms
+187 timing reifyNode:node_modules/stream-chain Completed in 2956ms
+188 timing reifyNode:node_modules/commander Completed in 2956ms
+189 timing reifyNode:node_modules/@solana/web3.js/node_modules/commander Completed in 2958ms
+190 timing reifyNode:node_modules/buffer-layout Completed in 2989ms
+191 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 3044ms
+192 timing auditReport:getReport Completed in 3049ms
+193 silly audit report {
+193 silly audit report   'bigint-buffer': [
+193 silly audit report     {
+193 silly audit report       id: 1103747,
+193 silly audit report       url: 'https://github.com/advisories/GHSA-3gc7-fjrx-p6mg',
+193 silly audit report       title: 'bigint-buffer Vulnerable to Buffer Overflow via toBigIntLE() Function',
+193 silly audit report       severity: 'high',
+193 silly audit report       vulnerable_versions: '<=1.1.5',
+193 silly audit report       cwe: [Array],
+193 silly audit report       cvss: [Object]
+193 silly audit report     }
+193 silly audit report   ],
+193 silly audit report   uuid: [
+193 silly audit report     {
+193 silly audit report       id: 1119441,
+193 silly audit report       url: 'https://github.com/advisories/GHSA-w5hq-g745-h8pq',
+193 silly audit report       title: 'uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided',
+193 silly audit report       severity: 'moderate',
+193 silly audit report       vulnerable_versions: '<11.1.1',
+193 silly audit report       cwe: [Array],
+193 silly audit report       cvss: [Object]
+193 silly audit report     }
+193 silly audit report   ]
+193 silly audit report }
+194 timing reifyNode:node_modules/jayson/node_modules/ws Completed in 3048ms
+195 timing reifyNode:node_modules/bigint-buffer Completed in 3049ms
+196 timing reifyNode:node_modules/jayson/node_modules/utf-8-validate Completed in 3069ms
+197 timing reifyNode:node_modules/node-fetch Completed in 3075ms
+198 timing reifyNode:node_modules/bufferutil Completed in 3098ms
+199 timing reifyNode:node_modules/ws Completed in 3109ms
+200 timing metavuln:cache:get:security-advisory:bigint-buffer:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 83ms
+201 timing metavuln:cache:get:security-advisory:uuid:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 78ms
+202 timing reifyNode:node_modules/rpc-websockets Completed in 3146ms
+203 http fetch GET 200 https://registry.npmjs.org/uuid 239ms (cache hit)
+204 timing metavuln:packument:uuid Completed in 243ms
+205 timing metavuln:load:security-advisory:uuid:1119441 Completed in 8ms
+206 timing metavuln:calculate:security-advisory:uuid:1119441 Completed in 252ms
+207 http fetch GET 200 https://registry.npmjs.org/bigint-buffer 254ms (cache hit)
+208 timing metavuln:packument:bigint-buffer Completed in 258ms
+209 timing metavuln:load:security-advisory:bigint-buffer:1103747 Completed in 1ms
+210 timing metavuln:calculate:security-advisory:bigint-buffer:1103747 Completed in 262ms
+211 timing reifyNode:node_modules/toml Completed in 3411ms
+212 timing metavuln:cache:get:security-advisory:@solana/buffer-layout-utils:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 121ms
+213 timing reifyNode:node_modules/@solana/web3.js/node_modules/superstruct Completed in 3423ms
+214 timing reifyNode:node_modules/@solana/options Completed in 3427ms
+215 timing reifyNode:node_modules/stream-json Completed in 3464ms
+216 http fetch GET 200 https://registry.npmjs.org/@solana%2fbuffer-layout-utils 252ms (cache hit)
+217 timing metavuln:packument:@solana/buffer-layout-utils Completed in 254ms
+218 timing metavuln:load:security-advisory:@solana/buffer-layout-utils:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 0ms
+219 timing metavuln:calculate:security-advisory:@solana/buffer-layout-utils:e8EkX7Sceg9pfS7JyYQyjdbi/ePl/9HKoxMcj25umEDjawNMshcGfO7IEkE4JkpikpdPoL1Vi8t4IgGoDWOYpw== Completed in 257ms
+220 timing metavuln:cache:get:security-advisory:jayson:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 86ms
+221 timing reifyNode:node_modules/utf-8-validate Completed in 3663ms
+222 timing reifyNode:node_modules/es6-promise Completed in 3680ms
+223 http fetch GET 200 https://registry.npmjs.org/jayson 146ms (cache hit)
+224 timing metavuln:packument:jayson Completed in 151ms
+225 timing metavuln:load:security-advisory:jayson:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 1ms
+226 timing metavuln:calculate:security-advisory:jayson:fjKShcKspemxj7050oTyq4F6Ys6oXOzZoO3QUapp6PgJCcrmTMbXQaxkcJ1QLLNHzsQ9sgLuhrlezjv+hoSUhg== Completed in 153ms
+227 timing metavuln:cache:get:security-advisory:@solana/spl-token:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 49ms
+228 timing reifyNode:node_modules/@solana/codecs-strings Completed in 3757ms
+229 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token 112ms (cache hit)
+230 timing metavuln:packument:@solana/spl-token Completed in 115ms
+231 timing metavuln:load:security-advisory:@solana/spl-token:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 0ms
+232 timing metavuln:calculate:security-advisory:@solana/spl-token:Xdxq+T2Bu0ve5Cc+Ry1Ljk6pnaQUPSse6jUQVKWypZpwrrVjKokp8rKICRADahDAiO5RQ6aOgYJt4aYhBWoX2A== Completed in 117ms
+233 timing metavuln:cache:get:security-advisory:@solana/web3.js:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 48ms
+234 warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+235 timing reifyNode:node_modules/node-domexception Completed in 3896ms
+236 timing reifyNode:node_modules/@types/node/node_modules/undici-types Completed in 3903ms
+237 timing reifyNode:node_modules/undici-types Completed in 3915ms
+238 timing reifyNode:node_modules/@solana/buffer-layout-utils Completed in 3944ms
+239 http fetch GET 200 https://registry.npmjs.org/@solana%2fweb3.js 173ms (cache hit)
+240 timing metavuln:packument:@solana/web3.js Completed in 256ms
+241 timing metavuln:load:security-advisory:@solana/web3.js:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 67ms
+242 timing metavuln:calculate:security-advisory:@solana/web3.js:MvtGVWrMK0lxZ0rmC+lwOKV0tJQxX5fqp8awuavJ2ulsgOjj8UI6GMoIEBPhKrV9ryEeCxhQTty3SjjxaFwowA== Completed in 324ms
+243 timing reifyNode:node_modules/@solana/spl-token-metadata Completed in 4246ms
+244 timing reifyNode:node_modules/jayson Completed in 4291ms
+245 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:y/Ov7LpqUKpYRl7x6EabbftZxc25IFixqKgEWO9EmNKGSPtXpVOOnkp/kOVXmZnFP33IF+LW5uUE/rFsaHVKHw== Completed in 94ms
+246 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 94ms
+247 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 97ms
+248 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fagent-payments-sdk 172ms (cache hit)
+249 timing metavuln:packument:@pump-fun/agent-payments-sdk Completed in 175ms
+250 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 0ms
+251 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 175ms
+252 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fpump-sdk 174ms (cache hit)
+253 timing metavuln:packument:@pump-fun/pump-sdk Completed in 179ms
+254 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 2ms
+255 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 182ms
+256 http fetch GET 200 https://registry.npmjs.org/@pump-fun%2fpump-swap-sdk 180ms (cache hit)
+257 timing metavuln:packument:@pump-fun/pump-swap-sdk Completed in 184ms
+258 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 2ms
+259 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:RvrzeZsjZHT/6yI0F6alIsG3x+paK19QgMYx66Txy7096yVIGz+rC9XIadSjbFxXmomfe5w9mNOjqCVQHhWrRg== Completed in 188ms
+260 timing reifyNode:node_modules/@solana/codecs-core Completed in 4852ms
+261 timing metavuln:cache:get:security-advisory:@coral-xyz/anchor:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 118ms
+262 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:Zfia+iKU1rSFgierhmh+j2SVUzTG3MAvge1w3z7BH/MhbVue0UsbMkEzUxeas43vyFdegmtrJ/XGcUajBDctng== Completed in 110ms
+263 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+264 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 111ms
+265 timing metavuln:cache:get:security-advisory:@coral-xyz/borsh:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 117ms
+266 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:Mz/uDOYMuW+RgAGAqeYivZrOLdXWL6CSsgvhcEhBilhnlz7E7YPLc6n3gI1i4uXPj3Hcdk6R+nunhPEsqwmdcw== Completed in 112ms
+267 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 2ms
+268 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 116ms
+269 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:g9zIWk0YA2nAZpWgS6bwcRH2E6Cesi+kyNMmUwwoCTdZ1S4Ya/srKzjo9gNO1tKZo5eU06i1ickv5mJ171brGw== Completed in 118ms
+270 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 2ms
+271 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 121ms
+272 timing metavuln:cache:get:security-advisory:@solana/spl-token:IVdGlqC9KT5oUgGjhI2EDzId0TxRdeYQ+qqxhgm8ED1okjE4Ko5ALaIr04pU0cEo9Wl7rMgEX6bJMVXHxR/+tg== Completed in 118ms
+273 timing metavuln:load:security-advisory:@solana/spl-token:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+274 timing metavuln:calculate:security-advisory:@solana/spl-token:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 118ms
+275 timing metavuln:cache:get:security-advisory:@solana/buffer-layout-utils:ugBSkQEfUcydwrjY+nDDWRcFgE7L7FobjEi7pgA48yewT6QHnJx3pZuL0U27a4YwYzVLkani9AGo8EpSlN/CPA== Completed in 119ms
+276 timing metavuln:load:security-advisory:@solana/buffer-layout-utils:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+277 timing metavuln:calculate:security-advisory:@solana/buffer-layout-utils:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 120ms
+278 timing metavuln:cache:get:security-advisory:@solana/spl-token-group:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 119ms
+279 timing metavuln:cache:get:security-advisory:@solana/spl-token-metadata:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 118ms
+280 timing reifyNode:node_modules/@solana/codecs-numbers Completed in 4923ms
+281 http fetch GET 200 https://registry.npmjs.org/@coral-xyz%2fborsh 195ms (cache hit)
+282 timing metavuln:packument:@coral-xyz/borsh Completed in 198ms
+283 timing metavuln:load:security-advisory:@coral-xyz/borsh:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 1ms
+284 timing metavuln:calculate:security-advisory:@coral-xyz/borsh:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 200ms
+285 http fetch GET 200 https://registry.npmjs.org/@coral-xyz%2fanchor 201ms (cache hit)
+286 timing metavuln:packument:@coral-xyz/anchor Completed in 203ms
+287 timing metavuln:load:security-advisory:@coral-xyz/anchor:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+288 timing metavuln:calculate:security-advisory:@coral-xyz/anchor:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 204ms
+289 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token-metadata 188ms (cache hit)
+290 timing metavuln:packument:@solana/spl-token-metadata Completed in 192ms
+291 timing metavuln:load:security-advisory:@solana/spl-token-metadata:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+292 timing metavuln:calculate:security-advisory:@solana/spl-token-metadata:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 192ms
+293 http fetch GET 200 https://registry.npmjs.org/@solana%2fspl-token-group 193ms (cache hit)
+294 timing metavuln:packument:@solana/spl-token-group Completed in 196ms
+295 timing metavuln:load:security-advisory:@solana/spl-token-group:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 0ms
+296 timing metavuln:calculate:security-advisory:@solana/spl-token-group:+mCC6nPwnm8ZTjoBJ4mC2sVQuhlyuAT2w8whRmZaFUjDdA3t08CXF57CxCokbfti/vnUqoWYmmVxqBFixzjBjQ== Completed in 196ms
+297 timing reifyNode:node_modules/@solana/spl-token-group Completed in 4995ms
+298 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:62WZVpyre/SJZCeywjPY0Dy+mRIE18kyJrTNXt/JemQq8qU/5IM9mo5fIXPZ1x89BaFQtcRkH/wcw8zxsotcaw== Completed in 69ms
+299 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 1ms
+300 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:1iJp0ZHq3x1NL8aGaDgYTKc5t27ZmKX3VP+z842WJWHfKHq4WxJY6/s5fy5C8NbZD1+OvMnIzkr/MZNmf9l6LA== Completed in 70ms
+301 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/codecs-numbers Completed in 5061ms
+302 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/codecs-core Completed in 5062ms
+303 timing reifyNode:node_modules/superstruct Completed in 5131ms
+304 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:upIPrSPsGalcw5Kh4FHmt821c5qYBbrkUe7eYDRAXYanKeul2SOhHJicnJoXR85BSosixJLJwtNi95CVBgWnVQ== Completed in 189ms
+305 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 4ms
+306 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:w69PjW/fsh53wSxZcp4y47hbmwx23HQJLaagUeloe+63hLicwYhcUa+AescrLOvRGihEX/BnxKcgVLIBlP7+5g== Completed in 193ms
+307 timing reifyNode:node_modules/@solana/web3.js/node_modules/@solana/errors Completed in 5259ms
+308 timing reifyNode:node_modules/jayson/node_modules/@types/node Completed in 5274ms
+309 timing reifyNode:node_modules/@solana/errors Completed in 5305ms
+310 timing metavuln:cache:get:security-advisory:@coral-xyz/anchor:E+YzZD5r4AjoEvOJBBw2BGZt/ogACNTWorzbHxtHFnrDgwjKAtj+PTz2OjmQCVA5TWPJzVEwzJaAphA8APxetg== Completed in 103ms
+311 timing metavuln:load:security-advisory:@coral-xyz/anchor:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 1ms
+312 timing metavuln:calculate:security-advisory:@coral-xyz/anchor:gGhjh38OQ4nVft5mu6v+W55WDE2exDiP7vt0Ewd1qxzIfUx3mzbq+H6EDS/6/CrlSGdjEEKTEdGVsXeKO3AWOg== Completed in 104ms
+313 timing reifyNode:node_modules/tsx Completed in 5368ms
+314 timing reifyNode:node_modules/pako Completed in 5442ms
+315 timing metavuln:cache:get:security-advisory:@pump-fun/agent-payments-sdk:iVbOKwsCmnDij4OKuDoUTi+PV8qmmkVLroEK94ygUtCmQLiYPErGpAXZnBwIXWRCX0dWmeSH9Qzu6WSITsbjGw== Completed in 111ms
+316 timing metavuln:load:security-advisory:@pump-fun/agent-payments-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 0ms
+317 timing metavuln:calculate:security-advisory:@pump-fun/agent-payments-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 112ms
+318 timing metavuln:cache:get:security-advisory:@pump-fun/pump-sdk:Pipd+nK3aVzzSdLcmkScCVd7bWIEU2Mpp0QuFzGWpcN4/FfHVNqod1PFsACb7mb2Exd7JmRh/zYIIqsfrBIiGA== Completed in 111ms
+319 timing metavuln:load:security-advisory:@pump-fun/pump-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 2ms
+320 timing metavuln:calculate:security-advisory:@pump-fun/pump-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 114ms
+321 timing metavuln:cache:get:security-advisory:@pump-fun/pump-swap-sdk:QhpLqHrV7Up+BedABhEQ917bdYGxB7mfgJ28gNc0CtIo5RksUB8qv2IRkor5XRIg4go97BaNyT7AHBs7X80ePg== Completed in 112ms
+322 timing metavuln:load:security-advisory:@pump-fun/pump-swap-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 1ms
+323 timing metavuln:calculate:security-advisory:@pump-fun/pump-swap-sdk:I9tYDBIOYotCnrk9djlvvta4KE8RVkUuSJEG+HhVYVjpuYciW1jmSWHpmk1uDLjcnbeqv2K1544XoYEa9dncLg== Completed in 114ms
+324 timing metavuln:cache:get:security-advisory:@solana/spl-token:R5FZLNM3E4S0QTJ+nwnvyXkujlkUI9ZlFn9iQSQ7fqS2j2IqUQKpvxaB1vwCWQA4aT7zkJmt8RnZScOCc9p5Gg== Completed in 97ms
+325 timing metavuln:load:security-advisory:@solana/spl-token:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 1ms
+326 timing metavuln:calculate:security-advisory:@solana/spl-token:3XwlDzh+tf5Dpr54SSuINpKTaHsL3Ztr/aryJI2axcvq9IYH07hH6bsJNxqsDOiWYhDtWH7ScxZdhv252rhVMQ== Completed in 98ms
+327 timing reifyNode:node_modules/@solana/codecs-data-structures Completed in 5578ms
+328 timing metavuln:cache:get:security-advisory:@solana/spl-token:4W85v+23N0fJPmt2dJ8LcHDC7XZ3km64KBwOC3jJnNmnruI9Y1cBF5nFUZqizo4TAIWDss+sHGrL1UOjJ/wktg== Completed in 38ms
+329 timing metavuln:load:security-advisory:@solana/spl-token:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 1ms
+330 timing metavuln:calculate:security-advisory:@solana/spl-token:Fu/0sZdGM9RSPrcS/DL2h261C8Q/SEkz0vllK0nOfRFqONBNORLynhYDTQmfYMSTjxK9F0XpvRLSpRj23imkEA== Completed in 39ms
+331 timing auditReport:init Completed in 2580ms
+332 timing reify:audit Completed in 5632ms
+333 warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+334 timing reifyNode:node_modules/uuid Completed in 5676ms
+335 timing reifyNode:node_modules/rpc-websockets/node_modules/uuid Completed in 5693ms
+336 timing reifyNode:node_modules/@pump-fun/pump-sdk Completed in 5879ms
+337 timing reifyNode:node_modules/fast-stable-stringify Completed in 5974ms
+338 timing reifyNode:node_modules/@types/node Completed in 6128ms
+339 timing reifyNode:node_modules/@esbuild/win32-x64 Completed in 6848ms
+340 timing reifyNode:node_modules/@pump-fun/pump-swap-sdk Completed in 6866ms
+341 timing reifyNode:node_modules/web-streams-polyfill Completed in 7494ms
+342 timing reifyNode:node_modules/@solana/web3.js Completed in 7689ms
+343 timing reifyNode:node_modules/@babel/runtime Completed in 7691ms
+344 timing reifyNode:node_modules/@noble/hashes Completed in 7987ms
+345 timing reifyNode:node_modules/@noble/curves Completed in 8084ms
+346 timing reifyNode:node_modules/@swc/helpers Completed in 9129ms
+347 timing reifyNode:node_modules/typescript Completed in 9232ms
+348 timing reifyNode:node_modules/@coral-xyz/anchor Completed in 9462ms
+349 timing reifyNode:node_modules/@solana/spl-token Completed in 11277ms
+350 timing reify:unpack Completed in 11284ms
+351 timing reify:unretire Completed in 2ms
+352 timing build:queue Completed in 28ms
+353 timing build:link:node_modules/@solana/errors Completed in 76ms
+354 timing build:link:node_modules/jayson Completed in 71ms
+355 timing build:link:node_modules/@solana/web3.js/node_modules/@solana/errors Completed in 70ms
+356 timing build:link:node_modules/rpc-websockets/node_modules/uuid Completed in 70ms
+357 timing build:link:node_modules/esbuild Completed in 73ms
+358 timing build:link:node_modules/node-gyp-build Completed in 72ms
+359 timing build:link:node_modules/tsx Completed in 71ms
+360 timing build:link:node_modules/uuid Completed in 70ms
+361 timing build:link:node_modules/typescript Completed in 72ms
+362 timing build:link Completed in 79ms
+363 info run bigint-buffer@1.1.5 install node_modules/bigint-buffer npm run rebuild || echo "Couldn't build bindings. Non-native version used."
+364 info run bufferutil@4.1.0 install node_modules/bufferutil node-gyp-build
+365 info run utf-8-validate@6.0.6 install node_modules/utf-8-validate node-gyp-build
+366 info run utf-8-validate@5.0.10 install node_modules/jayson/node_modules/utf-8-validate node-gyp-build
+367 info run utf-8-validate@5.0.10 install { code: 0, signal: null }
+368 timing build:run:install:node_modules/jayson/node_modules/utf-8-validate Completed in 1188ms
+369 info run bufferutil@4.1.0 install { code: 0, signal: null }
+370 timing build:run:install:node_modules/bufferutil Completed in 1263ms
+371 info run utf-8-validate@6.0.6 install { code: 0, signal: null }
+372 timing build:run:install:node_modules/utf-8-validate Completed in 1238ms
+373 info run bigint-buffer@1.1.5 install { code: 0, signal: null }
+374 timing build:run:install:node_modules/bigint-buffer Completed in 3481ms
+375 timing build:run:install Completed in 3482ms
+376 info run esbuild@0.28.1 postinstall node_modules/esbuild node install.js
+377 info run esbuild@0.28.1 postinstall { code: 0, signal: null }
+378 timing build:run:postinstall:node_modules/esbuild Completed in 1331ms
+379 timing build:run:postinstall Completed in 1331ms
+380 timing build:deps Completed in 4921ms
+381 timing build Completed in 4922ms
+382 timing reify:build Completed in 4924ms
+383 timing reify:trash Completed in 4ms
+384 timing reify Completed in 16409ms
+385 silly ADD node_modules/ws
+386 silly ADD node_modules/whatwg-url
+387 silly ADD node_modules/webidl-conversions
+388 silly ADD node_modules/web-streams-polyfill
+389 silly ADD node_modules/uuid
+390 silly ADD node_modules/utf-8-validate
+391 silly ADD node_modules/undici-types
+392 silly ADD node_modules/typescript
+393 silly ADD node_modules/tsx
+394 silly ADD node_modules/tslib
+395 silly ADD node_modules/tr46
+396 silly ADD node_modules/toml
+397 silly ADD node_modules/text-encoding-utf-8
+398 silly ADD node_modules/superstruct
+399 silly ADD node_modules/stream-json
+400 silly ADD node_modules/stream-chain
+401 silly ADD node_modules/safe-buffer
+402 silly ADD node_modules/rpc-websockets
+403 silly ADD node_modules/rpc-websockets/node_modules/uuid
+404 silly ADD node_modules/rpc-websockets/node_modules/eventemitter3
+405 silly ADD node_modules/pako
+406 silly ADD node_modules/node-gyp-build
+407 silly ADD node_modules/node-fetch
+408 silly ADD node_modules/node-domexception
+409 silly ADD node_modules/ms
+410 silly ADD node_modules/json-stringify-safe
+411 silly ADD node_modules/jayson
+412 silly ADD node_modules/jayson/node_modules/ws
+413 silly ADD node_modules/jayson/node_modules/utf-8-validate
+414 silly ADD node_modules/jayson/node_modules/commander
+415 silly ADD node_modules/jayson/node_modules/@types/ws
+416 silly ADD node_modules/jayson/node_modules/@types/node
+417 silly ADD node_modules/isomorphic-ws
+418 silly ADD node_modules/ieee754
+419 silly ADD node_modules/humanize-ms
+420 silly ADD
+421 silly ADD node_modules/formdata-polyfill
+422 silly ADD node_modules/file-uri-to-path
+423 silly ADD node_modules/fetch-blob
+424 silly ADD node_modules/fastestsmallesttextencoderdecoder
+425 silly ADD node_modules/fast-stable-stringify
+426 silly ADD node_modules/eyes
+427 silly ADD node_modules/eventemitter3
+428 silly ADD node_modules/esbuild
+429 silly ADD node_modules/es6-promisify
+430 silly ADD node_modules/es6-promise
+431 silly ADD node_modules/dotenv
+432 silly ADD node_modules/delay
+433 silly ADD node_modules/data-uri-to-buffer
+434 silly ADD node_modules/cross-fetch
+435 silly ADD node_modules/cross-fetch/node_modules/node-fetch
+436 silly ADD node_modules/commander
+437 silly ADD node_modules/chalk
+438 silly ADD node_modules/camelcase
+439 silly ADD node_modules/bufferutil
+440 silly ADD node_modules/buffer-layout
+441 silly ADD node_modules/buffer
+442 silly ADD node_modules/bs58
+443 silly ADD node_modules/borsh
+444 silly ADD node_modules/borsh/node_modules/bs58
+445 silly ADD node_modules/borsh/node_modules/base-x
+446 silly ADD node_modules/bn.js
+447 silly ADD node_modules/bindings
+448 silly ADD node_modules/bignumber.js
+449 silly ADD node_modules/bigint-buffer
+450 silly ADD node_modules/base64-js
+451 silly ADD node_modules/base-x
+452 silly ADD node_modules/agentkeepalive
+453 silly ADD node_modules/@types/ws
+454 silly ADD node_modules/@types/uuid
+455 silly ADD node_modules/@types/node
+456 silly ADD node_modules/@types/node/node_modules/undici-types
+457 silly ADD node_modules/@types/connect
+458 silly ADD node_modules/@types/bn.js
+459 silly ADD node_modules/@swc/helpers
+460 silly ADD node_modules/@solana/web3.js
+461 silly ADD node_modules/@solana/web3.js/node_modules/superstruct
+462 silly ADD node_modules/@solana/web3.js/node_modules/node-fetch
+463 silly ADD node_modules/@solana/web3.js/node_modules/commander
+464 silly ADD node_modules/@solana/web3.js/node_modules/bs58
+465 silly ADD node_modules/@solana/web3.js/node_modules/base-x
+466 silly ADD node_modules/@solana/web3.js/node_modules/@solana/errors
+467 silly ADD node_modules/@solana/web3.js/node_modules/@solana/codecs-numbers
+468 silly ADD node_modules/@solana/web3.js/node_modules/@solana/codecs-core
+469 silly ADD node_modules/@solana/spl-token-metadata
+470 silly ADD node_modules/@solana/spl-token-group
+471 silly ADD node_modules/@solana/spl-token
+472 silly ADD node_modules/@solana/options
+473 silly ADD node_modules/@solana/errors
+474 silly ADD node_modules/@solana/codecs-strings
+475 silly ADD node_modules/@solana/codecs-numbers
+476 silly ADD node_modules/@solana/codecs-data-structures
+477 silly ADD node_modules/@solana/codecs-core
+478 silly ADD node_modules/@solana/codecs
+479 silly ADD node_modules/@solana/buffer-layout-utils
+480 silly ADD node_modules/@solana/buffer-layout
+481 silly ADD
+482 silly ADD node_modules/@pump-fun/pump-swap-sdk
+483 silly ADD node_modules/@pump-fun/pump-sdk
+484 silly ADD node_modules/@pump-fun/agent-payments-sdk
+485 silly ADD node_modules/@noble/hashes
+486 silly ADD node_modules/@noble/curves
+487 silly ADD node_modules/@esbuild/win32-x64
+488 silly ADD
+489 silly ADD
+490 silly ADD
+491 silly ADD
+492 silly ADD
+493 silly ADD
+494 silly ADD
+495 silly ADD
+496 silly ADD
+497 silly ADD
+498 silly ADD
+499 silly ADD
+500 silly ADD
+501 silly ADD
+502 silly ADD
+503 silly ADD
+504 silly ADD
+505 silly ADD
+506 silly ADD
+507 silly ADD
+508 silly ADD
+509 silly ADD
+510 silly ADD
+511 silly ADD
+512 silly ADD
+513 silly ADD node_modules/@coral-xyz/borsh
+514 silly ADD node_modules/@coral-xyz/anchor-errors
+515 silly ADD node_modules/@coral-xyz/anchor
+516 silly ADD node_modules/@coral-xyz/anchor/node_modules/bs58
+517 silly ADD node_modules/@coral-xyz/anchor/node_modules/base-x
+518 silly ADD node_modules/@babel/runtime
+519 timing command:ci Completed in 16682ms
+520 verbose exit 0
+521 timing npm Completed in 17627ms
+522 info ok

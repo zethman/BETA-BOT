@@ -1,0 +1,30 @@
+{
+  "name": "sniper",
+  "version": "0.1.0",
+  "description": "Solana pump.fun sniping + copy trading bot (free-tier data layer, swappable to paid Yellowstone gRPC later)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "snipe": "tsx src/index.ts --mode=snipe",
+    "copy": "tsx src/index.ts --mode=copy",
+    "both": "tsx src/index.ts --mode=both",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@pump-fun/pump-sdk": "*",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.95.3",
+    "bn.js": "^5.2.1",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^20.14.0",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "ws": "^8.21.3"
+  }
+}
